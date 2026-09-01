@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGO Donation Management Software & Digital Receipts | Donexia</title>
+  <meta name="description" content="Donexia is NGO donation management software for Indian nonprofits. Manage donors, generate digital receipts, track campaigns and view reports in one place." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Datfuslab Technologies Private Limited" />
+  <meta name="theme-color" content="#f26b21" />
+
+  <link rel="canonical" href="https://donexia.in/" />
+  <link rel="alternate" hreflang="en-IN" href="https://donexia.in/" />
+  <link rel="alternate" hreflang="x-default" href="https://donexia.in/" />
+
+  <!-- Social sharing metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Donexia" />
+  <meta property="og:title" content="NGO Donation Management Software & Digital Receipts | Donexia" />
+  <meta property="og:description" content="Replace manual donation receipts with organized donor records, digital receipts, campaign tracking and reports built for Indian NGOs." />
+  <meta property="og:url" content="https://donexia.in/" />
+<meta property="og:image" content="https://donexia.in/assets/images/hero/hero-dashboard.webp" />
+  <meta property="og:image:alt" content="Donexia NGO donation management dashboard" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NGO Donation Management Software & Digital Receipts | Donexia" />
+  <meta name="twitter:description" content="Manage donors, digital donation receipts, campaigns and NGO reports from one platform." />
+<meta name="twitter:image" content="https://donexia.in/assets/images/hero/hero-dashboard.webp" />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured data: only verified company and product information -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://donexia.in/#organization",
+        "name": "Donexia",
+        "legalName": "Datfuslab Technologies Private Limited",
+        "url": "https://donexia.in/",
+        "email": "info@datfuslab.in",
+        "telephone": "+91-7004063385",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "B12, Sector 16B",
+          "addressLocality": "Noida",
+          "addressRegion": "Uttar Pradesh",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://donexia.in/#website",
+        "url": "https://donexia.in/",
+        "name": "Donexia",
+        "publisher": { "@id": "https://donexia.in/#organization" },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://donexia.in/#software",
+        "name": "Donexia",
+        "url": "https://donexia.in/",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "NGO donation and donor management software",
+        "operatingSystem": "Web",
+        "description": "Donexia helps Indian NGOs manage donors and donations, generate digital receipts, track campaigns and review fundraising reports.",
+        "publisher": { "@id": "https://donexia.in/#organization" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VET913FZZT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VET913FZZT');
+  </script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+    <header class="site-header">
+
+        <div class="container custom-container">
+
+            <nav class="navbar navbar-expand-lg donexia-navbar">
+
+                <div class="container-fluid px-2">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+
+                        <div class="brand-logo">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+
+                        <div class="brand-text">
+                            <h2>Donexia</h2>
+                            <p>NGO CRM for Greater Impact</p>
+                        </div>
+
+                    </a>
+
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler border-0 shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Open navigation menu">
+
+                        <i class="bi bi-list fs-2"></i>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+
+                        <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+
+                            <!-- Features -->
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                    href="#features"
+                                    data-bs-toggle="dropdown">
+
+                                    Features
+
+                                </a>
+
+                                <ul class="dropdown-menu donexia-dropdown">
+
+                                    <li><a class="dropdown-item" href="#donation-management">Donation Management</a></li>
+                                    <li><a class="dropdown-item" href="#volunteer-management">Volunteer Management</a></li>
+                                    <li><a class="dropdown-item" href="campaign.html">Campaign Management</a></li>
+                                    <li><a class="dropdown-item" href="#activities-management">Activities Management</a></li>
+                                    <li><a class="dropdown-item" href="#automatic-receipts">Digital Receipts</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <!-- Solutions -->
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                    href="#solutions"
+                                    data-bs-toggle="dropdown">
+
+                                    Solutions
+
+                                </a>
+
+                                <ul class="dropdown-menu donexia-dropdown">
+
+                                    <li><a class="dropdown-item" href="80g-donation-receipt-software.html">80G Donation Receipts</a></li>
+                                    <li><a class="dropdown-item" href="form-10bd-software.html">Form 10BD Records</a></li>
+                                    <li><a class="dropdown-item" href="ngo-donor-management-software.html">NGO Donor Management</a></li>
+                                    <li><a class="dropdown-item" href="whatsapp-donation-receipts.html">WhatsApp Donation Receipts</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+
+                            <!-- Resources -->
+                            <!--<li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle"
+                                    href="#"
+                                    data-bs-toggle="dropdown">
+
+                                    Resources
+
+                                </a>
+
+                                <ul class="dropdown-menu donexia-dropdown">
+
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                                    <li><a class="dropdown-item" href="#">Help Center</a></li>
+                                    <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="#">Documentation</a></li>
+
+                                </ul>
+
+                            </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="nav-btn-wrap">
+
+                            <a href="signup.html" class="request-demo-btn">
+                                Register Now
+                                <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+  <main id="main-content">
+  <section class="hero-wrapper">
+    <div class="container custom-container">
+
+      
+
+      <!-- ================= HERO CONTENT ================= -->
+      <div class="row align-items-center hero-row g-lg-4 g-4">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-4 col-md-12">
+          <div class="hero-left">
+            <div class="hero-badge">
+              <i class="bi bi-stars"></i>
+              <span>Donation and Donor Management for NGOs</span>
+            </div>
+
+            <h1 class="hero-title">
+              NGO Donation Management<br>
+              <span>Made Simple.</span>
+            </h1>
+
+            <p class="hero-desc">
+              Donexia helps Indian NGOs replace manual receipt processes with
+              organized donor records, digital receipts, campaigns and reports.
+            </p>
+
+            <ul class="hero-points">
+              <li><i class="bi bi-check-circle-fill"></i> Create and share professional digital donation receipts</li>
+              <li><i class="bi bi-check-circle-fill"></i> Collect donations with secure payment links</li>
+              <li><i class="bi bi-check-circle-fill"></i> Track volunteers, activities and reports effortlessly</li>
+              <li><i class="bi bi-check-circle-fill"></i> Make data-driven decisions and grow your impact</li>
+            </ul>
+
+            <div class="hero-buttons">
+              <a href="#features" class="btn-explore">
+                Explore Features <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+
+              <a href="contact.html" class="btn-watch">
+                <i class="bi bi-calendar-check-fill me-2"></i> Book a Demo
+              </a>
+            </div>
+
+            <div class="trusted-box">
+              <p>Built from <span>4 years</span> of practical NGO usage</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE PLACEHOLDER -->
+        <div class="col-lg-8 col-md-12">
+          <div class="hero-image-wrap">
+
+            <!-- Replace this block with your actual image later -->
+            <div class="hero-image-card">
+
+              <!-- OPTION 2: when you have actual image, use this and remove placeholder -->
+<img src="assets/images/hero/hero-dashboard.webp" alt="Donexia NGO donation and donor management dashboard" class="hero-main-image" width="1200" height="760" fetchpriority="high">
+              
+            </div>
+
+            <!-- Floating phone image placeholder -->
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ================= SECTION BELOW HERO ================= -->
+<section class="ngo-features-section" id="features" aria-labelledby="features-heading">
+  <div class="container custom-container">
+
+    <!-- ===== TOP WHITE INFO STRIP ===== -->
+    <div class="info-strip-card">
+      <div class="row g-0 align-items-center">
+
+        <!-- left -->
+        <div class="col-lg-4">
+          <div class="info-strip-col info-strip-left">
+            <h4>Communicate Instantly. Collect Seamlessly.</h4>
+
+            <div class="channel-list">
+              <div class="channel-item whatsapp">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+              </div>
+
+              <div class="channel-item sms">
+                <span class="sms-circle">SMS</span>
+                <span>SMS</span>
+              </div>
+
+              <div class="channel-item email">
+                <i class="bi bi-envelope"></i>
+                <span>Email</span>
+              </div>
+            </div>
+
+            <p>Send receipts & updates automatically</p>
+          </div>
+        </div>
+
+        <!-- middle -->
+        <div class="col-lg-4">
+          <div class="info-strip-col info-strip-middle">
+            <div class="mobile-strip-placeholder">
+              <div class="mobile-strip-phone">
+                <i class="bi bi-phone"></i>
+              </div>
+            </div>
+
+            <div class="middle-strip-content">
+              <h5>Send Payment Links via<br>SMS / WhatsApp</h5>
+              <p>Let donors pay securely anytime, anywhere</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="col-lg-4">
+          <div class="info-strip-col info-strip-right">
+            <div class="gateway-logos">
+              <span>Razorpay</span>
+              <span>instamojo</span>
+              <span>PayU</span>
+            </div>
+            <h5>Multiple Payment Gateways</h5>
+            <p>100% Secure Transactions</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== VERIFIED PRODUCT PROOF BAR ===== -->
+    <div class="impact-stats-bar">
+      <div class="row g-0">
+
+        <div class="col-lg col-md-6">
+          <div class="impact-stat-item">
+            <div class="impact-icon"><i class="bi bi-heart"></i></div>
+            <div>
+              <h3>4 Years</h3>
+              <p>Practical NGO Usage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6">
+          <div class="impact-stat-item">
+            <div class="impact-icon"><i class="bi bi-people"></i></div>
+            <div>
+              <h3>Digital</h3>
+              <p>Donor Records</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6">
+          <div class="impact-stat-item">
+            <div class="impact-icon"><i class="bi bi-cash-coin"></i></div>
+            <div>
+              <h3>Organized</h3>
+              <p>Donation Tracking</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-6">
+          <div class="impact-stat-item">
+            <div class="impact-icon"><i class="bi bi-envelope-paper"></i></div>
+            <div>
+              <h3>Faster</h3>
+              <p>Digital Receipts</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-md-12">
+          <div class="impact-stat-item">
+            <div class="impact-icon"><i class="bi bi-person-hearts"></i></div>
+            <div>
+              <h3>Cloud</h3>
+              <p>Access for Your Team</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <div class="features-block">
+      <div class="section-heading text-center">
+        <h2 id="features-heading">NGO Donation Management Tools in One Place</h2>
+        <div class="heading-underline"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="donation-management">
+            <div class="feature-icon orange-soft">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h4>Donation Management</h4>
+            <p>
+              Track donations, donors and payment details in real-time.
+              Generate tax receipts automatically.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="volunteer-management">
+            <div class="feature-icon blue-soft">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h4>Volunteer Management</h4>
+            <p>
+              Register, manage and engage volunteers. Track hours,
+              activities and contributions effortlessly.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="campaign-management">
+            <div class="feature-icon orange-soft">
+              <i class="bi bi-megaphone-fill"></i>
+            </div>
+            <h4>Campaign Management</h4>
+            <p>
+              Create impactful campaigns, set goals, track performance
+              and maximize your reach.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="automatic-receipts">
+            <div class="feature-icon yellow-soft">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <h4>Automatic Receipts</h4>
+            <p>
+              Send receipts automatically via SMS, WhatsApp or Email.
+              Save time and build trust.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="reports-analytics">
+            <div class="feature-icon green-soft">
+              <i class="bi bi-bar-chart-line-fill"></i>
+            </div>
+            <h4>Report & Analytics</h4>
+            <p>
+              Get powerful insights with custom reports and dashboards.
+              Make better decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="feature-card" id="activities-management">
+            <div class="feature-icon orange-soft">
+              <i class="bi bi-calendar-event-fill"></i>
+            </div>
+            <h4>Activities Management</h4>
+            <p>
+              Plan, organize and monitor events and activities
+              happening on the ground.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WHY DONEXIA + INTEGRATIONS ================= -->
+<section class="why-donexia-section" id="solutions" aria-labelledby="why-donexia-heading">
+  <div class="container custom-container">
+
+    <!-- top block -->
+    <div class="why-donexia-block">
+      <div class="row align-items-center g-4">
+
+        <!-- left -->
+        <div class="col-lg-4">
+          <div class="why-left">
+            <h2 id="why-donexia-heading">Why Indian NGOs Choose Donexia</h2>
+
+            <ul class="why-list">
+              <li><i class="bi bi-check-circle-fill"></i> Built specifically for NGOs and Non-Profits</li>
+              <li><i class="bi bi-check-circle-fill"></i> Easy to use and highly customizable</li>
+              <li><i class="bi bi-check-circle-fill"></i> Secure data with role-based access</li>
+              <li><i class="bi bi-check-circle-fill"></i> Cloud-based - access anytime, anywhere</li>
+              <li><i class="bi bi-check-circle-fill"></i> Dedicated support from our expert team</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- center illustration -->
+        <div class="col-lg-4">
+		  <div class="why-illustration-wrap">
+			<div class="why-illustration-card">
+<img src="assets/images/hero/why-donexia.webp" alt="Donexia tools for managing NGO donors, donations and receipts" class="why-illustration-img" loading="lazy">
+
+			</div>
+		  </div>
+		</div>
+
+        <!-- right verified product story -->
+        <div class="col-lg-4">
+          <div class="why-testimonial-card">
+            <div class="quote-icon">
+              <i class="bi bi-quote"></i>
+            </div>
+
+            <h3 class="h5">From Manual Receipts to Digital Records</h3>
+            <p class="testimonial-text">
+              Donexia has supported a real NGO for four years, helping its team move
+              from offline receipt processes to organized digital donation records.
+            </p>
+
+            <div class="testimonial-user">
+              <div class="testimonial-avatar">
+                4Y
+              </div>
+              <div class="testimonial-user-info">
+                <h6>Four Years of Practical Use</h6>
+                <span>Verified Donexia product experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- integrations -->
+    <!--<div class="integration-strip">
+      <div class="integration-title">Seamless Integrations</div>
+
+      <div class="integration-logos">
+        <div class="integration-item twilio">twilio</div>
+        <div class="integration-item aws">aws</div>
+        <div class="integration-item sendgrid">SendGrid</div>
+        <div class="integration-item whatsapp-api">WhatsApp<br>Business API</div>
+        <div class="integration-item razorpay">Razorpay</div>
+        <div class="integration-item analytics">Google<br>Analytics</div>
+        <div class="integration-item more-soon">More<br>Coming Soon</div>
+      </div>
+    </div>
+
+  </div> -->
+  
+  <div class="integration-strip">
+
+    <div class="integration-title">
+        Seamless Integrations
+    </div>
+
+    <div class="integration-logos">
+
+        <div class="integration-item">
+            <img src="assets/images/integrations/aws.png" alt="AWS integration" loading="lazy">
+        </div>
+
+        <div class="integration-item">
+            <img src="assets/images/integrations/sendgrid.svg" alt="SendGrid integration" loading="lazy">
+        </div>
+
+        <div class="integration-item">
+            <img src="assets/images/integrations/whatsapp-business-api.png" alt="WhatsApp Business API integration" loading="lazy">
+        </div>
+
+        <div class="integration-item">
+            <img src="assets/images/integrations/razorpay.png" alt="Razorpay payment gateway integration" loading="lazy">
+        </div>
+		
+		<div class="integration-item">
+			<img src="assets/images/integrations/secure-ssl-encryption.jpg" alt="SSL encrypted access" loading="lazy">
+        </div>
+
+        <div class="integration-item">
+            <img src="assets/images/integrations/payU.jpg" alt="PayU payment gateway integration" loading="lazy">
+        </div>
+
+        <div class="integration-item more-coming">
+            <i class="bi bi-plus-circle"></i>
+            <span>More Coming Soon</span>
+        </div>
+
+    </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS + CTA + FOOTER ================= -->
+<section class="donexia-bottom-section">
+
+  <div class="container custom-container">
+  
+<div class="section-heading text-center">
+  <h2 id="customer-result-heading">What NGO Teams Say About Donexia</h2>
+  <p>Experiences shared by current and previous Donexia customers.</p>
+  <div class="heading-underline"></div>
+</div>
+
+<div class="testimonial-slider" aria-labelledby="customer-result-heading">
+  <div class="testimonial-track">
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-receipt" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        Donexia helped our NGO move away from offline receipt processes and keep
+        donation and donor records in a searchable digital system.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">4Y</div>
+        <div class="leader-user-info">
+          <span>Current customer · Using Donexia for four years</span>
+          <h6>Verified Donexia customer</h6>
+        </div>
+      </div>
+    </article>
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-quote" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        Donexia has made our donation management process more organized and efficient. We can easily manage donor records, track donations, generate receipts, and monitor fundraising activities—all from one platform. It saves our team valuable time and helps us stay focused on our mission.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">BR</div>
+        <div class="leader-user-info">
+          <span>Previous Donexia customer</span>
+          <h6>Be Rose International Foundation</h6>
+        </div>
+      </div>
+    </article>
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-quote" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        Donexia has helped us move away from scattered records and time-consuming manual processes. We can now manage donor information, donation history, communication, and fundraising activities from one platform, making our daily operations easier, faster, and more organized.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">SE</div>
+        <div class="leader-user-info">
+          <span>Previous Donexia customer</span>
+          <h6>Spedara Edutech Foundation</h6>
+        </div>
+      </div>
+    </article>
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-quote" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        With Donexia, our fundraising team can manage donors, donations, campaigns, and follow-ups from one centralized platform. Having everything organized in one place has improved our team coordination, simplified daily operations, and helped us build stronger relationships with our donors.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">JY</div>
+        <div class="leader-user-info">
+          <span>Previous Donexia customer</span>
+          <h6>Joel Yaji Foundation</h6>
+        </div>
+      </div>
+    </article>
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-quote" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        Building strong and lasting relationships with donors is essential for our organization. Donexia helps us organize donor information, track donations, manage communication, and monitor fundraising activities efficiently, allowing our team to stay connected and work in a more structured way.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">GR</div>
+        <div class="leader-user-info">
+          <span>Previous Donexia customer</span>
+          <h6>Greenpeace</h6>
+        </div>
+      </div>
+    </article>
+
+    <article class="leader-card">
+      <div class="leader-quote"><i class="bi bi-quote" aria-hidden="true"></i></div>
+      <p class="leader-text">
+        Donexia makes everyday donation management simple and well organized. From maintaining donor records and tracking donations to generating receipts and monitoring fundraising activities, the platform helps our team work more efficiently and manage our fundraising operations professionally.
+      </p>
+      <div class="leader-user">
+        <div class="leader-avatar">YC</div>
+        <div class="leader-user-info">
+          <span>Previous Donexia customer</span>
+          <h6>Young Children Center Point</h6>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<div class="testimonial-dots" aria-label="Testimonial navigation">
+  <span class="active"></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </div>
+  
+  <!-- ================= CTA ================= -->
+
+<section class="footer-cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2>Together, we can build a better tomorrow.</h2>
+
+                    <p>Move from manual donation receipts to organized digital donor management.</p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+
+                    <a href="signup.html" class="cta-btn">
+                        Register Now
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+</main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="donexia-footer">
+    <div class="container custom-container">
+      <div class="footer-inner">
+
+        <div class="row g-4">
+
+          <!-- about -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-brand-block">
+              <div class="footer-brand">
+                <div class="footer-brand-icon">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+                <div class="footer-brand-text">
+                  <h3>Donexia</h3>
+                  <p>NGO CRM for Greater Impact</p>
+                </div>
+              </div>
+
+              <p class="footer-about">
+                Donexia is an all-in-one NGO CRM that helps you manage donations,
+                volunteers, campaigns and communications efficiently.
+              </p>
+
+              <!--<div class="footer-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- quick links -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links-block">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="campaign.html">Campaign Management</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- features -->
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-links-block">
+              <h4>Features</h4>
+              <ul>
+                <li><a href="#donation-management">Donation Management</a></li>
+                <li><a href="#volunteer-management">Volunteer Management</a></li>
+                <li><a href="campaign.html">Campaign Management</a></li>
+                <li><a href="#automatic-receipts">Digital Receipts</a></li>
+                <li><a href="#reports-analytics">Reports & Analytics</a></li>
+                <li><a href="#activities-management">Activities Management</a></li>
+                <li><a href="80g-donation-receipt-software.html">80G Receipt Software</a></li>
+                <li><a href="form-10bd-software.html">Form 10BD Records</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- resources -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links-block">
+              <h4>Get Started</h4>
+              <ul>
+                <li><a href="signup.html">Register Now</a></li>
+                <li><a href="contact.html">Book a Demo</a></li>
+                <li><a href="pricing.html">View Pricing</a></li>
+                <li><a href="about.html">About Donexia</a></li>
+                <li><a href="#solutions">Solutions for NGOs</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- contact -->
+          <div class="col-lg-2 col-md-6">
+            <div class="footer-links-block footer-contact-block">
+              <h4>Contact Us</h4>
+              <ul class="footer-contact-list">
+                <li><i class="bi bi-telephone"></i> <a href="tel:+917004063385">+91 7004063385</a></li>
+                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.in">info@datfuslab.in</a></li>
+                <li><i class="bi bi-globe"></i> <a href="https://donexia.in/">donexia.in</a></li>
+                <li><i class="bi bi-geo-alt"></i> B12, Sector-16B Noida, Uttar Pradesh, India</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- bottom bar -->
+        <div class="footer-bottom">
+          <p>© 2026 Datfuslab Technologies Pvt. Ltd. All Rights Reserved.</p>
+
+          <div class="footer-bottom-links">
+            <span>Privacy Policy</span>
+            <span>|</span>
+            <span>Terms & Conditions</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+<script src="assets/js/testimonial.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/mobile-navigation.js"></script>
+</body>
+</html>
+
+
+

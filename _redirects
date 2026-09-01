@@ -1,0 +1,5 @@
+http://donexia.in/* https://donexia.in/:splat 301!
+http://www.donexia.in/* https://donexia.in/:splat 301!
+https://www.donexia.in/* https://donexia.in/:splat 301!
+/index.html / 301!
+/privecy.html /privacy-policy.html 301!

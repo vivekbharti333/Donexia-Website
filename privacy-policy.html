@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | Donexia NGO CRM</title>
+  <meta name="description" content="Learn how Donexia and Datfuslab Technologies Private Limited collect, use, share, retain and protect account, NGO, donor and website information." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Datfuslab Technologies Private Limited" />
+  <meta name="theme-color" content="#f26b21" />
+
+  <link rel="canonical" href="https://donexia.in/privacy-policy.html" />
+  <link rel="alternate" hreflang="en-IN" href="https://donexia.in/privacy-policy.html" />
+  <link rel="alternate" hreflang="x-default" href="https://donexia.in/privacy-policy.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Donexia" />
+  <meta property="og:title" content="Privacy Policy | Donexia NGO CRM" />
+  <meta property="og:description" content="How Donexia handles account, NGO, donor and website information." />
+  <meta property="og:url" content="https://donexia.in/privacy-policy.html" />
+  <meta property="og:image" content="https://donexia.in/assets/images/hero/hero-dashboard.webp" />
+  <meta property="og:image:alt" content="Donexia NGO management software dashboard" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy Policy | Donexia NGO CRM" />
+  <meta name="twitter:description" content="How Donexia handles account, NGO, donor and website information." />
+  <meta name="twitter:image" content="https://donexia.in/assets/images/hero/hero-dashboard.webp" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    :root {
+      --dx-orange: #f26b21;
+      --dx-orange-dark: #d8530d;
+      --dx-orange-soft: #fff4ed;
+      --dx-navy: #17233c;
+      --dx-text: #445064;
+      --dx-muted: #6d7788;
+      --dx-border: #e7eaf0;
+      --dx-bg: #f8f9fc;
+      --dx-white: #ffffff;
+      --dx-green: #16845b;
+      --dx-green-soft: #eaf8f2;
+      --dx-shadow: 0 18px 50px rgba(28, 37, 54, 0.08);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--dx-text);
+      background: var(--dx-bg);
+      font-family: "Inter", sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--dx-orange-dark);
+    }
+
+    a:hover {
+      color: var(--dx-orange);
+    }
+
+    .privacy-header {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--dx-border);
+      backdrop-filter: blur(14px);
+    }
+
+    .privacy-header .navbar {
+      min-height: 78px;
+    }
+
+    .privacy-brand {
+      color: var(--dx-navy);
+      text-decoration: none;
+    }
+
+    .privacy-brand:hover {
+      color: var(--dx-navy);
+    }
+
+    .privacy-brand-icon {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      color: var(--dx-white);
+      background: linear-gradient(135deg, var(--dx-orange), #ff9f55);
+      border-radius: 13px;
+      box-shadow: 0 8px 22px rgba(242, 107, 33, 0.25);
+    }
+
+    .privacy-brand-name,
+    .privacy-brand-tagline {
+      display: block;
+    }
+
+    .privacy-brand-name {
+      color: var(--dx-navy);
+      font-size: 1.2rem;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .privacy-brand-tagline {
+      margin-top: 4px;
+      color: var(--dx-muted);
+      font-size: 0.72rem;
+      font-weight: 500;
+    }
+
+    .privacy-header .nav-link {
+      color: var(--dx-text);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .privacy-header .nav-link:hover,
+    .privacy-header .nav-link:focus {
+      color: var(--dx-orange-dark);
+    }
+
+    .privacy-demo-btn {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 11px 18px;
+      color: var(--dx-white);
+      background: var(--dx-orange);
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .privacy-demo-btn:hover {
+      color: var(--dx-white);
+      box-shadow: 0 10px 24px rgba(242, 107, 33, 0.25);
+      transform: translateY(-1px);
+    }
+
+    .privacy-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 78px 0 72px;
+      color: var(--dx-white);
+      background:
+        radial-gradient(circle at 14% 14%, rgba(255, 255, 255, 0.14), transparent 29%),
+        radial-gradient(circle at 88% 84%, rgba(56, 183, 130, 0.22), transparent 30%),
+        linear-gradient(135deg, #17233c 0%, #263b58 58%, #245448 100%);
+    }
+
+    .privacy-hero::after {
+      position: absolute;
+      right: -80px;
+      bottom: -135px;
+      width: 330px;
+      height: 330px;
+      content: "";
+      border: 58px solid rgba(43, 174, 118, 0.16);
+      border-radius: 50%;
+    }
+
+    .privacy-breadcrumb {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.86rem;
+    }
+
+    .privacy-breadcrumb a {
+      color: rgba(255, 255, 255, 0.86);
+      text-decoration: none;
+    }
+
+    .privacy-badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 13px;
+      margin-bottom: 18px;
+      color: #d8fff0;
+      background: rgba(43, 174, 118, 0.17);
+      border: 1px solid rgba(142, 235, 196, 0.28);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .privacy-hero h1 {
+      max-width: 760px;
+      margin: 0 0 16px;
+      color: var(--dx-white);
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.08;
+    }
+
+    .privacy-hero p {
+      max-width: 780px;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 1.02rem;
+    }
+
+    .privacy-date {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 10px 14px;
+      margin-top: 25px;
+      color: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      font-size: 0.87rem;
+      font-weight: 600;
+    }
+
+    .privacy-page {
+      padding: 62px 0 78px;
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .privacy-toc {
+      position: sticky;
+      top: 104px;
+      padding: 22px;
+      background: var(--dx-white);
+      border: 1px solid var(--dx-border);
+      border-radius: 16px;
+      box-shadow: 0 12px 32px rgba(28, 37, 54, 0.05);
+    }
+
+    .privacy-toc h2 {
+      margin: 0 0 14px;
+      color: var(--dx-navy);
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .privacy-toc ol {
+      display: grid;
+      gap: 7px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      counter-reset: privacy-toc;
+    }
+
+    .privacy-toc li {
+      counter-increment: privacy-toc;
+    }
+
+    .privacy-toc a {
+      display: grid;
+      grid-template-columns: 25px 1fr;
+      gap: 7px;
+      align-items: start;
+      padding: 6px 8px;
+      color: var(--dx-muted);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      line-height: 1.35;
+      text-decoration: none;
+    }
+
+    .privacy-toc a::before {
+      color: var(--dx-green);
+      font-weight: 800;
+      content: counter(privacy-toc, decimal-leading-zero);
+    }
+
+    .privacy-toc a:hover,
+    .privacy-toc a:focus {
+      color: var(--dx-green);
+      background: var(--dx-green-soft);
+    }
+
+    .privacy-content {
+      min-width: 0;
+    }
+
+    .privacy-summary,
+    .privacy-section {
+      background: var(--dx-white);
+      border: 1px solid var(--dx-border);
+      border-radius: 18px;
+      box-shadow: var(--dx-shadow);
+    }
+
+    .privacy-summary {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      padding: 24px;
+      margin-bottom: 22px;
+      border-left: 4px solid var(--dx-green);
+    }
+
+    .privacy-summary-icon {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      color: var(--dx-green);
+      background: var(--dx-green-soft);
+      border-radius: 12px;
+      font-size: 1.1rem;
+    }
+
+    .privacy-summary h2 {
+      margin: 0 0 6px;
+      color: var(--dx-navy);
+      font-size: 1.08rem;
+      font-weight: 800;
+    }
+
+    .privacy-summary p {
+      margin: 0;
+      color: var(--dx-muted);
+      font-size: 0.92rem;
+    }
+
+    .privacy-section {
+      padding: clamp(24px, 4vw, 38px);
+      margin-bottom: 22px;
+      scroll-margin-top: 105px;
+    }
+
+    .privacy-section-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 30px;
+      padding: 0 9px;
+      margin-bottom: 13px;
+      color: var(--dx-green);
+      background: var(--dx-green-soft);
+      border-radius: 8px;
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .privacy-section h2 {
+      margin: 0 0 16px;
+      color: var(--dx-navy);
+      font-size: clamp(1.28rem, 3vw, 1.7rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+
+    .privacy-section h3 {
+      margin: 22px 0 9px;
+      color: var(--dx-navy);
+      font-size: 1.02rem;
+      font-weight: 750;
+    }
+
+    .privacy-section p {
+      margin: 0 0 13px;
+    }
+
+    .privacy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .privacy-section ul {
+      display: grid;
+      gap: 9px;
+      padding-left: 1.25rem;
+      margin: 13px 0;
+    }
+
+    .privacy-section li::marker {
+      color: var(--dx-green);
+    }
+
+    .privacy-role-grid,
+    .privacy-data-grid,
+    .privacy-contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .privacy-role-card,
+    .privacy-data-card,
+    .privacy-contact-item {
+      padding: 17px;
+      background: var(--dx-bg);
+      border: 1px solid var(--dx-border);
+      border-radius: 12px;
+    }
+
+    .privacy-role-card i,
+    .privacy-data-card i,
+    .privacy-contact-item i {
+      color: var(--dx-green);
+    }
+
+    .privacy-role-card h3,
+    .privacy-data-card h3 {
+      margin: 8px 0 5px;
+      font-size: 0.94rem;
+    }
+
+    .privacy-role-card p,
+    .privacy-data-card p {
+      margin: 0;
+      color: var(--dx-muted);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    .privacy-callout {
+      padding: 17px 18px;
+      margin: 18px 0 4px;
+      color: #285346;
+      background: var(--dx-green-soft);
+      border: 1px solid #bfe7d7;
+      border-radius: 12px;
+      font-size: 0.91rem;
+    }
+
+    .privacy-warning {
+      padding: 17px 18px;
+      margin: 18px 0 4px;
+      color: #66411f;
+      background: #fff8e8;
+      border: 1px solid #f4dfad;
+      border-radius: 12px;
+      font-size: 0.91rem;
+    }
+
+    .privacy-contact-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: var(--dx-text);
+      text-decoration: none;
+    }
+
+    .privacy-contact-item strong,
+    .privacy-contact-item span {
+      display: block;
+    }
+
+    .privacy-contact-item strong {
+      color: var(--dx-navy);
+      font-size: 0.86rem;
+    }
+
+    .privacy-contact-item span {
+      overflow-wrap: anywhere;
+      color: var(--dx-muted);
+      font-size: 0.8rem;
+    }
+
+    .privacy-back-top {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      margin-top: 22px;
+      color: var(--dx-green);
+      font-size: 0.87rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .privacy-footer {
+      padding: 34px 0;
+      color: rgba(255, 255, 255, 0.72);
+      background: var(--dx-navy);
+      font-size: 0.86rem;
+    }
+
+    .privacy-footer-row {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .privacy-footer p {
+      margin: 0;
+    }
+
+    .privacy-footer-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .privacy-footer a {
+      color: rgba(255, 255, 255, 0.82);
+      text-decoration: none;
+    }
+
+    .privacy-footer a:hover {
+      color: var(--dx-white);
+    }
+
+    @media (max-width: 991.98px) {
+      .privacy-header .navbar-collapse {
+        padding: 18px 0 8px;
+      }
+
+      .privacy-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-toc {
+        position: static;
+      }
+
+      .privacy-toc ol {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .privacy-hero {
+        padding: 56px 0 52px;
+      }
+
+      .privacy-page {
+        padding: 38px 0 54px;
+      }
+
+      .privacy-toc ol,
+      .privacy-role-grid,
+      .privacy-data-grid,
+      .privacy-contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-footer-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media print {
+      .privacy-header,
+      .privacy-toc,
+      .privacy-back-top,
+      .privacy-footer {
+        display: none !important;
+      }
+
+      .privacy-hero {
+        padding: 24px 0;
+        color: #000;
+        background: #fff;
+      }
+
+      .privacy-hero h1,
+      .privacy-hero p,
+      .privacy-breadcrumb,
+      .privacy-date {
+        color: #000;
+      }
+
+      .privacy-page {
+        padding: 20px 0;
+      }
+
+      .privacy-section,
+      .privacy-summary {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://donexia.in/privacy-policy.html#webpage",
+        "url": "https://donexia.in/privacy-policy.html",
+        "name": "Privacy Policy | Donexia NGO CRM",
+        "description": "How Donexia handles account, NGO, donor and website information.",
+        "dateModified": "2026-07-22",
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://donexia.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Policy",
+            "item": "https://donexia.in/privacy-policy.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VET913FZZT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-VET913FZZT');
+  </script>
+</head>
+
+<body id="top">
+  <header class="privacy-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="privacy-brand d-flex align-items-center gap-2" href="index.html" aria-label="Donexia home">
+          <span class="privacy-brand-icon" aria-hidden="true"><i class="bi bi-heart-pulse"></i></span>
+          <span>
+            <span class="privacy-brand-name">Donexia</span>
+            <span class="privacy-brand-tagline">NGO CRM for Greater Impact</span>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#privacyNavbar"
+          aria-controls="privacyNavbar"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <i class="bi bi-list fs-2" aria-hidden="true"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="privacyNavbar">
+          <ul class="navbar-nav ms-auto me-lg-4 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <a href="contact.html" class="privacy-demo-btn">
+            Book a Demo <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="privacy-hero" aria-labelledby="privacy-title">
+      <div class="container position-relative" style="z-index: 1;">
+        <nav class="privacy-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Privacy Policy</span>
+        </nav>
+
+        <span class="privacy-badge"><i class="bi bi-shield-lock" aria-hidden="true"></i> Privacy</span>
+        <h1 id="privacy-title">Privacy Policy</h1>
+        <p>
+          This Policy explains how Donexia collects, uses, shares, retains and
+          protects information when you visit our website or use our NGO CRM.
+        </p>
+        <div class="privacy-date">
+          <i class="bi bi-calendar3" aria-hidden="true"></i>
+          Effective and last updated: 22 July 2026
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-page">
+      <div class="container">
+        <div class="privacy-layout">
+          <aside class="privacy-toc" aria-label="Privacy Policy contents">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#scope">Scope and identity</a></li>
+              <li><a href="#roles">Our privacy roles</a></li>
+              <li><a href="#information">Information collected</a></li>
+              <li><a href="#sources">Sources of information</a></li>
+              <li><a href="#purposes">How we use information</a></li>
+              <li><a href="#ngo-data">NGO and donor data</a></li>
+              <li><a href="#cookies">Cookies and analytics</a></li>
+              <li><a href="#sharing">How information is shared</a></li>
+              <li><a href="#payments">Payment information</a></li>
+              <li><a href="#transfers">Data locations and transfers</a></li>
+              <li><a href="#retention">Data retention</a></li>
+              <li><a href="#security">Security</a></li>
+              <li><a href="#rights">Your rights and choices</a></li>
+              <li><a href="#children">Children’s data</a></li>
+              <li><a href="#communications">Marketing communications</a></li>
+              <li><a href="#third-party-links">Third-party links</a></li>
+              <li><a href="#changes">Policy updates</a></li>
+              <li><a href="#grievance">Grievance and contact</a></li>
+            </ol>
+          </aside>
+
+          <article class="privacy-content">
+            <div class="privacy-summary">
+              <div class="privacy-summary-icon"><i class="bi bi-person-lock" aria-hidden="true"></i></div>
+              <div>
+                <h2>Privacy at a glance</h2>
+                <p>
+                  We use information to provide and secure Donexia, support customers,
+                  enable requested integrations and comply with law. NGOs control the
+                  donor information they enter into their accounts and are responsible
+                  for collecting and using it lawfully.
+                </p>
+              </div>
+            </div>
+
+            <section class="privacy-section" id="scope">
+              <span class="privacy-section-number">01</span>
+              <h2>Scope and who we are</h2>
+              <p>
+                This Privacy Policy applies to the Donexia website, web application,
+                customer onboarding, support and related services operated by Datfuslab
+                Technologies Private Limited (“Donexia”, “we”, “us” or “our”).
+              </p>
+              <p>
+                It covers personal data we process about website visitors, trial users,
+                customer representatives, Authorized Users, support contacts and other
+                people who interact directly with us. It also explains our role when an
+                NGO customer uploads information about donors, volunteers, staff,
+                beneficiaries or other people to Donexia.
+              </p>
+              <p>
+                This Policy should be read with our
+                <a href="terms-and-conditions.html">Terms and Conditions</a> and any
+                specific order, data-processing agreement or notice presented when data is collected.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="roles">
+              <span class="privacy-section-number">02</span>
+              <h2>Our privacy roles</h2>
+              <p>Our role depends on why information is processed:</p>
+
+              <div class="privacy-role-grid">
+                <div class="privacy-role-card">
+                  <i class="bi bi-building-check" aria-hidden="true"></i>
+                  <h3>Donexia as Data Fiduciary</h3>
+                  <p>
+                    We determine the purpose and means of processing for our website,
+                    account administration, billing, security, support and direct business communications.
+                  </p>
+                </div>
+                <div class="privacy-role-card">
+                  <i class="bi bi-database-lock" aria-hidden="true"></i>
+                  <h3>Donexia as Data Processor</h3>
+                  <p>
+                    For donor and operational data an NGO places in its CRM account,
+                    the NGO generally determines the purpose and Donexia processes that data on its instructions.
+                  </p>
+                </div>
+              </div>
+
+              <p>
+                If you are a donor, volunteer, beneficiary or employee of a Donexia customer,
+                first direct questions about that NGO’s use of your data to the NGO. We will
+                support the NGO in handling requests where required and technically possible.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="information">
+              <span class="privacy-section-number">03</span>
+              <h2>Information we collect</h2>
+
+              <div class="privacy-data-grid">
+                <div class="privacy-data-card">
+                  <i class="bi bi-person-vcard" aria-hidden="true"></i>
+                  <h3>Account information</h3>
+                  <p>Name, email, mobile number, role, login details, preferences and account status.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-buildings" aria-hidden="true"></i>
+                  <h3>Organization information</h3>
+                  <p>NGO name, type, address, website, registration or tax details, team and plan information.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                  <h3>Donor and donation records</h3>
+                  <p>Donor contact details, donation amount and date, campaign, receipt, communication and payment-reference data.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-file-earmark-lock" aria-hidden="true"></i>
+                  <h3>Compliance information</h3>
+                  <p>Identifiers or details an NGO chooses to collect for receipt, tax, reporting or record-management workflows.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-credit-card" aria-hidden="true"></i>
+                  <h3>Billing and transaction data</h3>
+                  <p>Subscription invoices, payment status, gateway transaction reference, amount, date and limited settlement metadata.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-laptop" aria-hidden="true"></i>
+                  <h3>Technical and usage data</h3>
+                  <p>IP address, browser, device, timestamps, pages or features used, error reports, logs and security events.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-headset" aria-hidden="true"></i>
+                  <h3>Support and communication</h3>
+                  <p>Demo requests, support tickets, calls, emails, WhatsApp messages, feedback and training records.</p>
+                </div>
+                <div class="privacy-data-card">
+                  <i class="bi bi-plug" aria-hidden="true"></i>
+                  <h3>Integration data</h3>
+                  <p>Tokens, configuration, status and data exchanged with services enabled by an authorized customer.</p>
+                </div>
+              </div>
+
+              <p>
+                The exact information depends on the modules used, customer configuration
+                and information voluntarily provided. We ask customers not to upload
+                unnecessary sensitive information or credentials to free-text fields.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="sources">
+              <span class="privacy-section-number">04</span>
+              <h2>Sources of information</h2>
+              <p>We may receive information:</p>
+              <ul>
+                <li>directly from you through signup, demo, forms, account settings, support or communications;</li>
+                <li>from an NGO customer or its Authorized Users when they create records or import data;</li>
+                <li>automatically from your browser, device, cookies, logs and security systems;</li>
+                <li>from payment gateways, messaging platforms and other integrations enabled by the Customer;</li>
+                <li>from referrals, implementation partners or public business sources where lawful; and</li>
+                <li>from service providers helping us operate, secure, support or analyze Donexia.</li>
+              </ul>
+            </section>
+
+            <section class="privacy-section" id="purposes">
+              <span class="privacy-section-number">05</span>
+              <h2>Why and how we use information</h2>
+              <p>We process information where permitted by applicable law to:</p>
+              <ul>
+                <li>create accounts, authenticate users and provide purchased or requested features;</li>
+                <li>store, organize, display, export and transmit Customer Data according to customer instructions;</li>
+                <li>generate donation records, receipts, reports and communications requested by Authorized Users;</li>
+                <li>provide demos, onboarding, migration, training, customization and customer support;</li>
+                <li>manage subscriptions, invoices, renewals, payments and business records;</li>
+                <li>monitor reliability, diagnose errors, prevent fraud and protect accounts and systems;</li>
+                <li>improve usability, performance, documentation and features using appropriately limited data;</li>
+                <li>send service notices and, where permitted, relevant product or marketing communications;</li>
+                <li>establish, exercise or defend legal claims and enforce our agreements; and</li>
+                <li>comply with applicable law, valid legal process and regulatory obligations.</li>
+              </ul>
+              <p>
+                Depending on the context and applicable law, processing may be based on your
+                consent, your voluntary provision of data for a specified purpose, compliance
+                with law, or another lawful use permitted under applicable law. Where processing
+                is based on consent, you may withdraw it using the method provided, subject to
+                processing already completed and other lawful retention requirements.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="ngo-data">
+              <span class="privacy-section-number">06</span>
+              <h2>NGO-controlled donor and operational data</h2>
+              <p>
+                NGO customers decide which donor, volunteer, staff, campaign, beneficiary and
+                operational information to enter into Donexia, why to use it, how long it is
+                required, who may access it and which communications to send.
+              </p>
+              <p>Each NGO customer is responsible for:</p>
+              <ul>
+                <li>providing required privacy notices and obtaining valid consent where required;</li>
+                <li>collecting only information needed for lawful, clearly stated purposes;</li>
+                <li>keeping donor and compliance information accurate and updated;</li>
+                <li>handling access, correction, erasure, withdrawal and grievance requests from its data subjects;</li>
+                <li>configuring user permissions and removing access when staff or volunteers leave; and</li>
+                <li>complying with fundraising, tax, accounting, FCRA and communications requirements applicable to it.</li>
+              </ul>
+              <div class="privacy-callout">
+                If an NGO has contacted you using Donexia, the NGO—not Donexia—normally
+                controls the relationship and should be your first contact for questions about
+                the information in that NGO’s account.
+              </div>
+            </section>
+
+            <section class="privacy-section" id="cookies">
+              <span class="privacy-section-number">07</span>
+              <h2>Cookies, local storage and analytics</h2>
+              <p>
+                Donexia may use cookies, local storage and similar technologies for account login,
+                session continuity, security, preferences, performance measurement and analytics.
+                Cookies may be placed by us or by service providers whose tools are enabled on the website.
+              </p>
+              <h3>Typical categories</h3>
+              <ul>
+                <li><strong>Strictly necessary:</strong> authentication, security, load balancing and essential website operation.</li>
+                <li><strong>Preference:</strong> language, interface and user settings.</li>
+                <li><strong>Analytics:</strong> aggregated information about visits, navigation, performance and errors.</li>
+                <li><strong>Marketing:</strong> campaign attribution or advertising measurement, only if such tools are enabled and permitted.</li>
+              </ul>
+              <p>
+                You can control many cookies through browser settings. Blocking necessary cookies
+                may prevent login or cause parts of Donexia to stop working. Where required, a
+                consent interface will be provided for non-essential cookies.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="sharing">
+              <span class="privacy-section-number">08</span>
+              <h2>How we share information</h2>
+              <p>We may share limited information with:</p>
+              <ul>
+                <li><strong>Customer administrators and Authorized Users</strong> according to account permissions;</li>
+                <li><strong>Service providers</strong> supporting hosting, storage, security, communications, analytics, support, billing and operations;</li>
+                <li><strong>Integrations selected by the Customer</strong> when an Authorized User enables or uses the integration;</li>
+                <li><strong>Professional advisers</strong> such as auditors, accountants, insurers and legal advisers under appropriate duties;</li>
+                <li><strong>Government or legal authorities</strong> when disclosure is required by applicable law or valid legal process;</li>
+                <li><strong>Business transaction participants</strong> in a merger, financing, acquisition, reorganization or transfer, subject to appropriate safeguards; and</li>
+                <li><strong>Other parties</strong> when you direct us or give valid consent.</li>
+              </ul>
+              <p>
+                We do not sell donor lists or Customer Data. We do not authorize service providers
+                to use Customer Data for their own unrelated marketing purposes.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="payments">
+              <span class="privacy-section-number">09</span>
+              <h2>Payment and donation transaction information</h2>
+              <p>
+                Subscription payments and donations may be handled through third-party payment
+                gateways. Card numbers, bank credentials, UPI authorization or other payment
+                credentials entered on a gateway’s interface are processed under that provider’s
+                privacy policy and terms.
+              </p>
+              <p>
+                Donexia may receive and store limited transaction information such as gateway name,
+                transaction reference, status, amount, currency, date, payer details made available
+                to the Customer, refund status and reconciliation metadata. We use this information
+                to display payment status, generate requested records, provide support and prevent fraud.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="transfers">
+              <span class="privacy-section-number">10</span>
+              <h2>Data locations and international transfers</h2>
+              <p>
+                Donexia and its service providers may process information in India and in other
+                locations where they operate. When information is processed outside India, we will
+                take reasonable contractual, organizational and technical steps appropriate to the
+                data and comply with transfer restrictions that apply at the relevant time.
+              </p>
+              <p>
+                The location of data may also depend on the hosting, communications, payment or
+                integration providers selected or approved for the Customer’s implementation.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="retention">
+              <span class="privacy-section-number">11</span>
+              <h2>How long we retain information</h2>
+              <p>
+                We retain personal data only for as long as reasonably needed for the stated purpose,
+                an active customer relationship, account administration, security, dispute resolution,
+                enforcement, backups and legal or financial recordkeeping.
+              </p>
+              <p>Retention depends on factors including:</p>
+              <ul>
+                <li>the type and sensitivity of the information;</li>
+                <li>the Customer’s subscription status, instructions and available account controls;</li>
+                <li>the period needed to provide support, prevent fraud or resolve disputes;</li>
+                <li>applicable tax, accounting, corporate, employment or regulatory requirements; and</li>
+                <li>technical backup cycles and secure-deletion processes.</li>
+              </ul>
+              <p>
+                NGO customers should export required records before account closure. When data is no
+                longer required, we will delete, anonymize or securely isolate it, subject to legal
+                obligations and technically necessary backup periods.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="security">
+              <span class="privacy-section-number">12</span>
+              <h2>How we protect information</h2>
+              <p>
+                We use reasonable technical and organizational safeguards designed for the nature of
+                the Services and the information processed. Measures may include role-based access,
+                authentication controls, encrypted network transmission, logging, backups, access review,
+                vulnerability management and service-provider assessment, as appropriate.
+              </p>
+              <p>
+                No internet service, transmission or storage system is completely secure. Customers
+                must protect credentials, assign suitable permissions, maintain secure devices and report
+                suspicious activity promptly.
+              </p>
+              <p>
+                If we identify a personal-data breach, we will investigate, take reasonable containment
+                and remediation steps, and provide notifications required by applicable law.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="rights">
+              <span class="privacy-section-number">13</span>
+              <h2>Your privacy rights and choices</h2>
+              <p>
+                Depending on the relationship, applicable law and any exemptions, you may request to:
+              </p>
+              <ul>
+                <li>receive information about the personal data being processed and relevant sharing;</li>
+                <li>access available personal data associated with your account or direct relationship with Donexia;</li>
+                <li>correct inaccurate information or complete and update incomplete information;</li>
+                <li>erase personal data that is no longer necessary, subject to lawful retention;</li>
+                <li>withdraw consent where processing depends on consent;</li>
+                <li>opt out of non-essential marketing communications;</li>
+                <li>raise a grievance and receive a response through our grievance process; and</li>
+                <li>nominate another individual to exercise applicable rights in the circumstances provided by law.</li>
+              </ul>
+              <p>
+                Send requests to <a href="mailto:info@datfuslab.in">info@datfuslab.in</a> using the
+                subject “Privacy Request”. We may request information reasonably necessary to verify
+                identity, authority and the relevant account before acting. We will respond within the
+                period required by applicable law.
+              </p>
+              <div class="privacy-warning">
+                If your request concerns data held in an NGO customer’s Donexia account, contact that
+                NGO first. We may forward the request to the NGO or act on its verified instructions.
+              </div>
+            </section>
+
+            <section class="privacy-section" id="children">
+              <span class="privacy-section-number">14</span>
+              <h2>Children’s personal data</h2>
+              <p>
+                Donexia is a business platform intended for organizations and authorized adult users,
+                not for children to create independent accounts. An NGO may use Donexia for programs
+                involving children only when it has lawful authority, provides required notices, obtains
+                verifiable parental or guardian consent where required and applies suitable access controls.
+              </p>
+              <p>
+                Customers should avoid entering children’s information unless it is necessary for a
+                legitimate program and supported by their legal and safeguarding procedures. Contact us
+                promptly if you believe children’s data has been entered without proper authority.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="communications">
+              <span class="privacy-section-number">15</span>
+              <h2>Service and marketing communications</h2>
+              <p>
+                We may send necessary account, security, billing, support and service notices. These are
+                operational messages and may continue while an account is active.
+              </p>
+              <p>
+                Where permitted, we may also send product news, event invitations, educational material
+                or offers. You may opt out using the unsubscribe method in the message or by contacting us.
+                Opting out of marketing does not stop necessary service communications.
+              </p>
+              <p>
+                Communications sent by an NGO customer to its donors are controlled by that NGO. Direct
+                opt-out or consent questions about those messages to the sending NGO.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="third-party-links">
+              <span class="privacy-section-number">16</span>
+              <h2>Third-party links and services</h2>
+              <p>
+                Our website or application may link to third-party websites, payment pages, messaging
+                services or integrations. Their privacy practices are controlled by them, not by Donexia.
+                Review their policies before providing information or enabling an integration.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="changes">
+              <span class="privacy-section-number">17</span>
+              <h2>Changes to this Privacy Policy</h2>
+              <p>
+                We may update this Policy when our Services, providers, practices or legal obligations
+                change. The revised version will display a new “last updated” date. If a change materially
+                affects how we handle personal data, we will provide an appropriate additional notice through
+                the website, application, email or another suitable channel.
+              </p>
+            </section>
+
+            <section class="privacy-section" id="grievance">
+              <span class="privacy-section-number">18</span>
+              <h2>Privacy grievance and contact details</h2>
+              <p>
+                For privacy questions, rights requests, consent withdrawal, complaints or concerns about
+                Donexia’s processing, contact our Privacy and Grievance Contact:
+              </p>
+
+              <div class="privacy-contact-grid">
+                <a class="privacy-contact-item" href="mailto:info@datfuslab.in?subject=Privacy%20Request">
+                  <i class="bi bi-envelope" aria-hidden="true"></i>
+                  <span><strong>Email</strong><span>info@datfuslab.in</span></span>
+                </a>
+                <a class="privacy-contact-item" href="tel:+917004063385">
+                  <i class="bi bi-telephone" aria-hidden="true"></i>
+                  <span><strong>Phone</strong><span>+91 7004063385</span></span>
+                </a>
+                <div class="privacy-contact-item">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                  <span><strong>Company</strong><span>Datfuslab Technologies Private Limited</span></span>
+                </div>
+                <div class="privacy-contact-item">
+                  <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                  <span><strong>Postal address</strong><span>B12, Sector 16B, Noida, Uttar Pradesh, India</span></span>
+                </div>
+              </div>
+
+              <p>
+                Please describe the concern, identify the relevant account or NGO where possible and
+                provide a reliable method for us to respond. We may need to verify identity and authority.
+                We will acknowledge and address grievances within the period required by applicable law.
+              </p>
+            </section>
+
+            <a class="privacy-back-top" href="#top">
+              <i class="bi bi-arrow-up" aria-hidden="true"></i> Back to top
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="privacy-footer">
+    <div class="container">
+      <div class="privacy-footer-row">
+        <p>© 2026 Datfuslab Technologies Private Limited. All rights reserved.</p>
+        <div class="privacy-footer-links" aria-label="Legal links">
+          <span aria-current="page">Privacy Policy</span>
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/mobile-navigation.js"></script>
+</body>
+</html>
+
+
+
