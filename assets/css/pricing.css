@@ -243,7 +243,7 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 18px;
 }
 
@@ -338,6 +338,14 @@
 }
 
 
+/* Free */
+
+.free-icon {
+    background: #e6f7f9;
+    color: #0e8fa8;
+}
+
+
 /* =========================================
    PLAN NAME
 ========================================= */
@@ -368,6 +376,11 @@
 
 .enterprise-text {
     color: #7226bd;
+}
+
+
+.free-text {
+    color: #0b7e94;
 }
 
 
@@ -508,6 +521,19 @@
 }
 
 
+/* Free Button */
+
+.free-btn {
+    color: #0e8fa8;
+    border: 1px solid #12a3bd;
+}
+
+.free-btn:hover {
+    background: #0e8fa8;
+    color: #ffffff;
+}
+
+
 /* =========================================
    FEATURE LIST
 ========================================= */
@@ -582,6 +608,11 @@
 
 .enterprise-check {
     background: #7424c1;
+}
+
+
+.free-check {
+    background: #0e8fa8;
 }
 
 
@@ -713,7 +744,7 @@
 
     grid-template-columns:
         1.5fr
-        repeat(4, 1fr);
+        repeat(5, 1fr);
 
     min-height: 26px;
 
@@ -796,6 +827,15 @@
 
 .starter-column .plan-small-icon {
     background: #effbf2;
+}
+
+
+.free-column {
+    color: #0b7e94;
+}
+
+.free-column .plan-small-icon {
+    background: #e6f7f9;
 }
 
 
@@ -1234,7 +1274,7 @@
     }
 
     .comparison-table {
-        min-width: 850px;
+        min-width: 1000px;
     }
 
     .pricing-bottom-section {
@@ -1285,4 +1325,234 @@
         min-height: 130px;
     }
 
+}
+
+
+/* ==========================================
+   PLAN CARDS — SELECTABLE TABLE DESIGN
+   (icon + name + radio header, spec rows)
+========================================== */
+
+.plan-card {
+    padding: 24px 20px 22px;
+    cursor: pointer;
+}
+
+.plan-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-ico {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.plan-head-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.plan-card .plan-name {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.plan-card .plan-subtitle {
+    text-align: left;
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: #6b7280;
+}
+
+.plan-radio {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border: 1.5px solid #cfd4dc;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.plan-card.is-selected .plan-radio {
+    border-color: #ff5a16;
+}
+
+.plan-card.is-selected .plan-radio::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #ff5a16;
+}
+
+.plan-card .plan-price {
+    text-align: left;
+    font-size: 26px;
+    margin: 14px 0 0;
+}
+
+.plan-card .plan-price span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #293140;
+}
+
+.plan-includes {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid #eef0f4;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #9aa1ad;
+}
+
+.plan-spec {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.plan-spec li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 4.5px 0;
+    font-size: 12.5px;
+    line-height: 1.3;
+}
+
+.plan-spec li span {
+    color: #4b5261;
+}
+
+.plan-spec li b {
+    color: #1d2431;
+    font-weight: 700;
+    text-align: right;
+}
+
+.plan-spec li i {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.plan-spec li i.yes {
+    color: #12a83a;
+}
+
+.plan-spec li i.no {
+    color: #d64550;
+}
+
+.plan-card .plan-btn {
+    margin-top: 16px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.plan-note {
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 11px;
+    color: #8a919d;
+}
+
+.plan-card.is-selected {
+    border: 2px solid #ff5a16;
+    box-shadow: 0 8px 25px rgba(255, 90, 22, 0.12);
+}
+
+@media (max-width: 1100px) {
+
+    .plan-card {
+        padding: 24px 26px 22px;
+    }
+}
+
+
+/* ==========================================
+   BILLING TOGGLE (Monthly / Yearly)
+========================================== */
+
+.billing-toggle-wrap {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.billing-toggle {
+    display: inline-flex;
+    gap: 4px;
+    padding: 5px;
+    background: #eef0f4;
+    border-radius: 999px;
+}
+
+.billing-option {
+    border: 0;
+    background: transparent;
+    padding: 8px 26px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.billing-option.is-active {
+    background: #ffffff;
+    color: #ff5a16;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.billing-note {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+@media (max-width: 480px) {
+
+    .billing-option {
+        padding: 7px 18px;
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================
+   4-PLAN GRID (Starter plan removed)
+========================================== */
+
+.plans-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.comparison-row {
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+}
+
+@media (max-width: 1000px) {
+
+    .comparison-table {
+        min-width: 850px;
+    }
 }

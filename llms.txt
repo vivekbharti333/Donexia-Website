@@ -1,0 +1,30 @@
+# Donexia — NGO CRM for Indian NGOs
+
+Donexia is donation and donor management software (NGO CRM) built for Indian nonprofits.
+It covers donation management, donor records, volunteer management, campaign management,
+activities management, audit-ready reports, and automatic donation receipts sent to donors
+via WhatsApp, SMS and email, with integrated payment gateways (Razorpay, PayU, Instamojo)
+for online donations and shareable payment links.
+
+## Key pages
+
+- [Home](https://donexia.in/): NGO donation management software overview
+- [Pricing](https://donexia.in/pricing.html): free forever plan + paid plans from ₹4,999/month
+- [80G donation receipt software](https://donexia.in/80g-donation-receipt-software.html)
+- [Form 10BD software](https://donexia.in/form-10bd-software.html)
+- [NGO donor management software](https://donexia.in/ngo-donor-management-software.html)
+- [WhatsApp donation receipts](https://donexia.in/whatsapp-donation-receipts.html)
+- [Campaign management](https://donexia.in/campaign.html)
+
+## Guides
+
+- [Form 10BD filing guide for Indian NGOs](https://donexia.in/guides/form-10bd-filing-guide.html)
+- [80G donation receipts: format, rules and template](https://donexia.in/guides/80g-donation-receipt-guide.html)
+- [NGO compliance calendar 2026-27](https://donexia.in/guides/ngo-compliance-calendar-2026-27.html)
+- [Donor management best practices for Indian NGOs](https://donexia.in/guides/donor-management-best-practices.html)
+
+## Contact
+
+- Phone: +91 7004063385
+- Email: info@datfuslab.in
+- Address: B12, Sector-16B, Noida, Uttar Pradesh, India

@@ -10,6 +10,9 @@
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="Datfuslab Technologies Private Limited" />
     <meta name="theme-color" content="#f26b21" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/brand/icon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/images/brand/apple-touch-icon.png" />
 
     <link rel="canonical" href="https://donexia.in/contact.html" />
     <link rel="alternate" hreflang="en-IN" href="https://donexia.in/contact.html" />
@@ -117,12 +120,64 @@
     gtag('js', new Date());
     gtag('config', 'G-VET913FZZT');
   </script>
+
+  <style>
+    .page-faq .accordion-item { margin-bottom: 12px; overflow: hidden; border: 1px solid #e8eaf0; border-radius: 12px; }
+    .page-faq .accordion-button { font-weight: 700; box-shadow: none; }
+    .page-faq .accordion-button:not(.collapsed) { color: #d8530d; background: #fff4ed; }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly will the Donexia team respond?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We usually respond to enquiries within one working day, and often much sooner during Indian business hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a demo before signing up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use the form on this page to book a free demo and our team will walk you through donation management, digital receipts, campaigns and reporting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free plan I can try first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can start on the Free plan \u2014 up to 2 users and 1,000 records with email receipts \u2014 without a credit card, and book a demo whenever you are ready."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should we prepare before getting started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just your basic NGO details and team contacts. If you have an existing donor register in Excel or another format, our team can help you bring it into Donexia during onboarding."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<!-- ================= HEADER ================= -->
     <header class="site-header">
+
+        <!-- Announcement bar -->
+        <div class="announcement-bar" role="region" aria-label="Announcement">
+            <span>New: Free plan — start with no credit card. <a href="pricing.html#free-plan">See what's included</a></span>
+            <button type="button" class="announcement-close" aria-label="Dismiss announcement">&times;</button>
+        </div>
 
         <div class="container custom-container">
 
@@ -133,15 +188,7 @@
                     <!-- Logo -->
                     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
 
-                        <div class="brand-logo">
-                           <!-- <i class="bi bi-heart-pulse"></i> -->
-						   <img src="assets/images/logo/donexia-logo.png" alt="Donexia Logo" class="logo-img">
-						   
-                        </div>
-
-                        <!--<div class="brand-text">
-                            <img src="assets/images/logo/donexia-logo.png" alt="Donexia Logo" class="logo-img">
-                        </div> -->
+                        <img src="assets/images/brand/donexia-logo.png" alt="Donexia NGO CRM for Greater Impact" class="brand-logo-img" width="171" height="46">
 
                     </a>
 
@@ -206,14 +253,17 @@
 
                                 <ul class="dropdown-menu donexia-dropdown">
 
-                                    <li><a class="dropdown-item" href="index.html#solutions">For Small NGOs</a></li>
-                                    <li><a class="dropdown-item" href="index.html#solutions">For Mid-size NGOs</a></li>
-                                    <li><a class="dropdown-item" href="index.html#solutions">For Large Foundations</a></li>
-                                    <li><a class="dropdown-item" href="index.html#solutions">Fundraising Teams</a></li>
-                                    <li><a class="dropdown-item" href="index.html#solutions">Multi Branch NGOs</a></li>
+                                    <li><a class="dropdown-item" href="80g-donation-receipt-software.html">80G Donation Receipts</a></li>
+                                    <li><a class="dropdown-item" href="form-10bd-software.html">Form 10BD Records</a></li>
+                                    <li><a class="dropdown-item" href="ngo-donor-management-software.html">NGO Donor Management</a></li>
+                                    <li><a class="dropdown-item" href="whatsapp-donation-receipts.html">WhatsApp Donation Receipts</a></li>
 
                                 </ul>
 
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="guides/">Guides</a>
                             </li>
 
                             <li class="nav-item">
@@ -229,7 +279,7 @@
                         <div class="nav-btn-wrap">
 
                             <a href="signup.html" class="request-demo-btn">
-                                Register Now
+                                Start Free
                                 <i class="bi bi-arrow-right ms-2"></i>
                             </a>
 
@@ -507,6 +557,48 @@
 
 </section>
 
+
+<section class="container custom-container py-5 page-faq" aria-labelledby="contactFaq-heading">
+  <div class="text-center mb-4">
+    <h2 id="contactFaq-heading">Before You Reach Out</h2>
+    <p class="text-muted">Quick answers about demos, the free plan and getting started.</p>
+  </div>
+  <div class="accordion" id="contactFaqAccordion" style="max-width: 900px; margin: 0 auto;">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq-0" aria-expanded="true" aria-controls="contactFaq-0">How quickly will the Donexia team respond?</button>
+        </h3>
+        <div id="contactFaq-0" class="accordion-collapse collapse show" data-bs-parent="#contactFaqAccordion">
+          <div class="accordion-body">We usually respond to enquiries within one working day, and often much sooner during Indian business hours.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq-1" aria-expanded="false" aria-controls="contactFaq-1">Can I book a demo before signing up?</button>
+        </h3>
+        <div id="contactFaq-1" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+          <div class="accordion-body">Yes. Use the form on this page to book a free demo and our team will walk you through donation management, digital receipts, campaigns and reporting.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq-2" aria-expanded="false" aria-controls="contactFaq-2">Is there a free plan I can try first?</button>
+        </h3>
+        <div id="contactFaq-2" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+          <div class="accordion-body">Yes. You can start on the Free plan — up to 2 users and 1,000 records with email receipts — without a credit card, and book a demo whenever you are ready.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq-3" aria-expanded="false" aria-controls="contactFaq-3">What should we prepare before getting started?</button>
+        </h3>
+        <div id="contactFaq-3" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
+          <div class="accordion-body">Just your basic NGO details and team contacts. If you have an existing donor register in Excel or another format, our team can help you bring it into Donexia during onboarding.</div>
+        </div>
+      </div>
+  </div>
+</section>
+
 </main>
 
    
@@ -516,7 +608,7 @@
 
 
 
-  <!-- ===== FOOTER ===== -->
+<!-- ===== FOOTER ===== -->
   <footer class="donexia-footer">
     <div class="container custom-container">
       <div class="footer-inner">
@@ -540,14 +632,6 @@
                 Donexia is an all-in-one NGO CRM that helps you manage donations,
                 volunteers, campaigns and communications efficiently.
               </p>
-
-              <!--<div class="footer-socials">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-              </div> -->
             </div>
           </div>
 
@@ -560,7 +644,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="index.html#features">Features</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
-                
+                <li><a href="campaign.html">Campaign Management</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
@@ -574,21 +658,25 @@
                 <li><a href="index.html#donation-management">Donation Management</a></li>
                 <li><a href="index.html#volunteer-management">Volunteer Management</a></li>
                 <li><a href="campaign.html">Campaign Management</a></li>
-                <li><a href="index.html#automatic-receipts">Automatic Receipts</a></li>
+                <li><a href="index.html#automatic-receipts">Digital Receipts</a></li>
                 <li><a href="index.html#reports-analytics">Reports & Analytics</a></li>
                 <li><a href="index.html#activities-management">Activities Management</a></li>
+                <li><a href="80g-donation-receipt-software.html">80G Receipt Software</a></li>
+                <li><a href="form-10bd-software.html">Form 10BD Records</a></li>
               </ul>
             </div>
           </div>
 
-          <!-- resources -->
+          <!-- get started -->
           <div class="col-lg-2 col-md-6">
             <div class="footer-links-block">
-              <h4>Support</h4>
+              <h4>Get Started</h4>
               <ul>
-                <li><a href="contact.html">Contact Support</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                <li><a href="signup.html">Start Free — No Card</a></li>
+                <li><a href="pricing.html#free-plan">Free Plan Details</a></li>
+                <li><a href="contact.html">Book a Demo</a></li>
+                <li><a href="pricing.html">View Pricing</a></li>
+                <li><a href="guides/">NGO Guides & Resources</a></li>
               </ul>
             </div>
           </div>
@@ -598,9 +686,9 @@
             <div class="footer-links-block footer-contact-block">
               <h4>Contact Us</h4>
               <ul class="footer-contact-list">
-                <li><i class="bi bi-telephone"></i> +91 7004063385</li>
-                <li><i class="bi bi-envelope"></i> info@datfuslab.in</li>
-                <li><i class="bi bi-globe"></i> donexia.in</li>
+                <li><i class="bi bi-telephone"></i> <a href="tel:+917004063385">+91 7004063385</a></li>
+                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.in">info@datfuslab.in</a></li>
+                <li><i class="bi bi-globe"></i> <a href="https://donexia.in/">donexia.in</a></li>
                 <li><i class="bi bi-geo-alt"></i> B12, Sector-16B Noida, Uttar Pradesh, India</li>
               </ul>
             </div>
