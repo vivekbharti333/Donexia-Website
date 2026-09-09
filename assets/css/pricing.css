@@ -1544,11 +1544,49 @@
 .plans-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
+    max-width: 1250px;
 }
 
 .comparison-row {
     grid-template-columns: 1.5fr repeat(4, 1fr);
 }
+
+/* Pricing cards matched to the monthly and annual plan reference. */
+.plans-section { background: #fcfcfd; padding-top: 24px; }
+.plan-card { padding: 16px; border: 1px solid #dfe4ec; border-radius: 14px; }
+.professional-card { box-shadow: 0 5px 20px rgba(0,0,0,.04); }
+.plan-card.is-selected { background: linear-gradient(150deg, #fff6ee, #fff 65%); }
+.plan-head { margin: 0 -5px; padding: 12px 8px; gap: 10px; border-radius: 10px; background: linear-gradient(110deg,#f3f6f8,#fff); }
+.growth-card .plan-head { background: linear-gradient(110deg,#fff1e6,#fffaf6); }
+.professional-card .plan-head { background: linear-gradient(110deg,#f5efff,#fff); }
+.enterprise-card .plan-head { background: linear-gradient(110deg,#eef5ff,#fff); }
+.plan-ico { width: 34px; height: 34px; min-width: 34px; border-radius: 10px; background: #fff; font-size: 19px; box-shadow: 0 5px 10px rgba(25,35,50,.05); }
+.free-icon { color: #5c7285; }
+.growth-icon { color: #ed5000; }
+.professional-icon { color: #8145d5; }
+.enterprise-icon { color: #df4900; background: #fff1e6; }
+.plan-card .plan-name { color: #171717; font-size: 20px; letter-spacing: -.5px; }
+.plan-card .plan-subtitle { margin-top: 4px; font-size: 12px; color: #6c7b92; }
+.plan-radio { width: 16px; height: 16px; min-width: 16px; border-color: #888; }
+.plan-card .plan-price { color: #141b2b; margin: 14px 0 16px; font-size: 27px; font-weight: 700; letter-spacing: -1px; }
+.plan-card .plan-price .price-amount { color: inherit; font-size: inherit; font-weight: inherit; }
+.plan-card .plan-price span:not(.price-amount) { color: #5f6d85; font-size: 13px; font-weight: 600; letter-spacing: 0; }
+.plan-includes { margin-top: 0; padding-top: 13px; border-color: #e4e8ef; color: #5b687e; font-size: 12px; letter-spacing: 0; }
+.plan-spec { margin-top: 8px; }
+.plan-spec li { min-height: 32px; padding: 5px 0; border-bottom: 1px solid #edf0f5; font-size: 13px; }
+.plan-spec li:last-child { border-bottom: 0; }
+.plan-spec li span { color: #50658b; }
+.plan-spec li i { display: inline-flex; justify-content: center; align-items: center; width: 20px; height: 20px; border-radius: 50%; font-size: 16px; }
+.plan-spec li i.yes { color: #14945b; background: #e8f7ef; }
+.plan-spec li i.no { color: #df3e50; background: #fff0f2; }
+.plan-card .plan-btn { height: 40px; border-radius: 8px; font-size: 14px; border: 1px solid #f45100; color: #e54b00; background: #fff; }
+.growth-card .plan-btn, .plan-card .plan-btn:hover { color: #fff; background: linear-gradient(100deg,#ff6900,#df4900); }
+.popular-badge { left: auto; right: 14px; transform: none; top: -13px; border-radius: 30px; font-size: 10px; }
+.billing-toggle { padding: 6px; border: 1px solid #dfe4ec; background: #f0f2f6; }
+.billing-option { padding: 10px 24px; font-size: 14px; }
+.billing-note { font-size: 13px; }
+@media (max-width: 1100px) { .plans-container { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px 18px; } }
+@media (max-width: 600px) { .plans-container { grid-template-columns: minmax(0,1fr); } .plans-section { padding: 30px 16px; } }
 
 @media (max-width: 1000px) {
 
