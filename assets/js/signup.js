@@ -22,13 +22,17 @@ async function postApi(path, requestBody) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(requestBody)
         });
-    } catch {
-        throw new Error("Unable to reach the server. Check your connection and try again.");
+    } catch (error) {
+        console.error("Signup API connection failed", apiUrl(path), error);
+        throw new Error("Unable to connect to the signup service. Please reload the page and try again.");
     }
 
+    if (response.status === 404) {
+        throw new Error(`The signup service endpoint (${path}) was not found. Please contact support.`);
+    }
     let data;
     try { data = await response.json(); }
-    catch { throw new Error("The server returned an invalid response."); }
+    catch { throw new Error(`The signup service returned an invalid response (HTTP ${response.status}). Please try again later.`); }
     if (!response.ok) throw new Error(data.responseMessage || "Request failed. Please try again.");
     return data;
 }
@@ -80,7 +84,7 @@ async function sendOTP(isResend = false) {
         document.getElementById("timer").textContent = "Sending...";
     }
     try {
-        const data = await postApi(SEND_OTP_PATH, { payload: { mobileNo: mobile } });
+        const data = await postApi(SEND_OTP_PATH, { payload: { customerMobile: mobile } });
         const result = data.payload || {};
         if (data.responseCode === 200 && result.respCode === 200) {
             verifiedMobile = mobile;
@@ -126,7 +130,7 @@ async function verifyOTP() {
     try {
         const data = await postApi(VERIFY_OTP_PATH, {
             payload: {
-                mobileNo: verifiedMobile || document.getElementById("mobile").value.trim(),
+                customerMobile: verifiedMobile || document.getElementById("mobile").value.trim(),
                 otp
             }
         });

@@ -466,22 +466,14 @@ body{
 
 .hero-image-card{
   width:100%;
-  height:500px;
-  border-radius:28px;
-  background:#fff;
-  box-shadow:var(--shadow);
-  border:1px solid #f1f3f7;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
+  height:auto;
+  display:block;
   position:relative;
 }
 
 .hero-main-image{
   width:100%;
-  height:100%;
-
+  height:auto;
   display:block;
 }
 
@@ -799,7 +791,7 @@ body{
 
   .hero-image-card,
   .hero-image-placeholder{
-    min-height:440px;
+    min-height:0;
   }
 }
 
@@ -819,7 +811,7 @@ body{
 
   .hero-image-card,
   .hero-image-placeholder{
-    min-height:400px;
+    min-height:0;
   }
 
   .phone-image-card{
@@ -872,7 +864,7 @@ body{
 
   .hero-image-card,
   .hero-image-placeholder{
-    min-height:360px;
+    min-height:0;
   }
 
   .phone-image-card{
@@ -949,8 +941,7 @@ body{
 
   .hero-image-card,
   .hero-image-placeholder{
-    min-height:290px;
-    border-radius:24px;
+    min-height:0;
   }
 
   .placeholder-icon{
@@ -1057,7 +1048,7 @@ body{
 
   .hero-image-card,
   .hero-image-placeholder{
-    min-height:250px;
+    min-height:0;
   }
 
   .info-strip-col{
