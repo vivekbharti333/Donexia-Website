@@ -88,6 +88,20 @@
   color: #d9540e;
 }
 
+.seo-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 50px;
+  color: #667085;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.seo-text-link:hover {
+  color: #d9540e;
+}
+
 .seo-hero-card {
   padding: 30px;
   border: 1px solid #f1e2d8;
@@ -553,7 +567,8 @@
     gap: 10px;
   }
 
-  .seo-actions a {
+  .seo-actions a.seo-btn,
+  .seo-actions a.seo-btn-outline {
     width: 100%;
   }
 

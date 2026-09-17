@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re, os, glob
 
-BASE = r"D:\Websites\Donexia Website"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 HEADER_TMPL = '''<!-- ================= HEADER ================= -->
     <header class="site-header">
@@ -63,11 +63,12 @@ HEADER_TMPL = '''<!-- ================= HEADER ================= -->
 
                                 <ul class="dropdown-menu donexia-dropdown">
 
-                                    <li><a class="dropdown-item" href="{P}index.html#donation-management">Donation Management</a></li>
-                                    <li><a class="dropdown-item" href="{P}index.html#volunteer-management">Volunteer Management</a></li>
+                                    <li><a class="dropdown-item" href="{P}donation-management-software.html">Donation Management</a></li>
+                                    <li><a class="dropdown-item" href="{P}ngo-volunteer-management-software.html">Volunteer Management</a></li>
                                     <li><a class="dropdown-item" href="{P}campaign.html">Campaign Management</a></li>
                                     <li><a class="dropdown-item" href="{P}index.html#activities-management">Activities Management</a></li>
-                                    <li><a class="dropdown-item" href="{P}index.html#automatic-receipts">Digital Receipts</a></li>
+                                    <li><a class="dropdown-item" href="{P}automatic-donation-receipts.html">Digital Receipts</a></li>
+                                    <li><a class="dropdown-item" href="{P}ngo-reports-analytics-software.html">Reports &amp; Analytics</a></li>
 
                                 </ul>
 
@@ -231,7 +232,7 @@ FOOTER_TMPL = '''<!-- ===== FOOTER ===== -->
     </div>
   </footer>'''
 
-FAVICON = ('<link rel="icon" href="/favicon.ico" sizes="any" />\n  '
+FAVICON = ('<link rel="icon" href="/assets/images/fevicon/favicon.ico" sizes="any" />\n  '
            '<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/brand/icon-192.png" />\n  '
            '<link rel="apple-touch-icon" href="/assets/images/brand/apple-touch-icon.png" />')
 
