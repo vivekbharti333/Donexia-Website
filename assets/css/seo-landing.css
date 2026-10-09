@@ -53,6 +53,20 @@
   margin-top: 30px;
 }
 
+.seo-device-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  font-size: .92rem;
+  color: #526078;
+}
+
+.seo-device-line i {
+  color: #f26b21;
+}
+
 .seo-btn,
 .seo-btn-outline {
   display: inline-flex;

@@ -121,12 +121,6 @@
     gtag('config', 'G-VET913FZZT');
   </script>
 
-  <!-- Google Ads tag - replace AW-XXXXXXXXX with your Google Ads customer ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-  <script>
-    gtag('config', 'AW-XXXXXXXXX');
-  </script>
-
   <style>
     .page-faq .accordion-item { margin-bottom: 12px; overflow: hidden; border: 1px solid #e8eaf0; border-radius: 12px; }
     .page-faq .accordion-button { font-weight: 700; box-shadow: none; }
@@ -158,7 +152,7 @@
       "name": "Is there a free plan I can try first?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. You can start on the Free plan \u2014 up to 2 users and 1,000 records with email receipts \u2014 without a credit card, and book a demo whenever you are ready."
+        "text": "Yes. You can start on the Free plan \u2014 up to 2 users with email receipts \u2014 without a credit card, and book a demo whenever you are ready."
       }
     },
     {
@@ -172,6 +166,21 @@
   ]
 }
   </script>
+    <style>
+        .contact-details-grid{margin-top:24px;margin-bottom:48px;}
+        .contact-details-grid .info-card{padding:24px;border:1px solid #e7eaf0;border-radius:18px;background:#fff;box-shadow:0 6px 24px rgba(23,35,60,.04);}
+        .contact-details-grid .contact-card-heading{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+        .contact-details-grid .info-icon{width:44px;height:44px;flex-shrink:0;margin:0;border-radius:13px;font-size:20px;}
+        .contact-details-grid h3{margin:0;font-size:17px;font-weight:700;color:#17233c;}
+        .contact-details-grid p{font-size:14px;line-height:1.7;margin:0;color:#667085;}
+        .contact-details-grid .contact-company{color:#344054;font-weight:600;margin-bottom:6px;}
+        .contact-details-grid .contact-card-link{display:inline-flex;align-items:center;gap:8px;max-width:100%;margin-bottom:10px;font-size:15px;font-weight:600;color:#17233c;text-decoration:none;overflow-wrap:anywhere;}
+        .contact-details-grid .contact-card-link i{font-size:12px;flex-shrink:0;color:#c74c0a;}
+        .contact-details-grid .contact-card-link:hover{color:#c74c0a;}
+        .contact-details-grid .contact-card-link:focus-visible{outline:3px solid #f26b21;outline-offset:4px;border-radius:3px;}
+        .contact-details-grid .contact-hours-note{display:inline-block;margin-top:12px;padding:4px 9px;border-radius:6px;background:#f4f5f7;color:#667085;font-size:12px;}
+        @media(max-width:575px){.contact-details-grid .info-card{padding:20px;}.contact-details-grid .contact-card-heading{margin-bottom:14px;}}
+    </style>
 </head>
 
 <body>
@@ -285,8 +294,8 @@
 
                         <div class="nav-btn-wrap">
 
-                            <a href="signup.html" class="request-demo-btn">
-                                Start Free
+                            <a href="contact.html" class="request-demo-btn">
+                                Contact Us
                                 <i class="bi bi-arrow-right ms-2"></i>
                             </a>
 
@@ -366,20 +375,7 @@
 
                 </div>
 
-                <!-- Image Placeholder -->
-                <!--<div class="contact-image mt-5">
-
-                     Place your image here later 
-
-                    
-                    <img src="images/contact-illustration.png" class="img-fluid" alt="">
-                    
-
-                </div>-->
-
-                
-
-            </div>
+</div>
 
             <!-- Right Side Form -->
             <div class="col-lg-6">
@@ -393,6 +389,7 @@
 
                     <p>
                         Fill in the form and our team will get back to you shortly.
+                        Works on mobile, tablet &amp; laptop.
                     </p>
 
                     <form id="contact-form">
@@ -422,17 +419,18 @@
                             <div class="col-12">
                                 <label class="visually-hidden" for="subject">Subject</label>
                                 <select class="form-select" id="subject" name="subject" required>
-                                    <option value="" selected disabled>Select Subject</option>
-                                    <option>General Inquiry</option>
-                                    <option>Demo Request</option>
-                                    <option>Support</option>
+                                    <option selected>Book a Free Demo</option>
+                                    <option>Help Getting Started</option>
+                                    <option>Pricing Question</option>
+                                    <option>Technical Support</option>
+                                    <option>Other Enquiry</option>
                                 </select>
                             </div>
 
                             <div class="col-12">
-                                <label class="visually-hidden" for="message">Your Requirements</label>
-                                <textarea class="form-control" id="message" name="message" rows="6" required
-                                    placeholder="Tell us more about your requirements..."></textarea>
+                                <label class="visually-hidden" for="message">Your Requirements (optional)</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"
+                                    placeholder="Tell us about your NGO or ask a question (optional)..."></textarea>
                             </div>
 
                             <div class="col-12">
@@ -469,99 +467,39 @@
 </section>
 
 <!-- Contact Cards Section -->
-<section class="row mt-4 mb-5" aria-labelledby="contact-details-heading">
-
+<section class="container custom-container contact-details-grid" aria-labelledby="contact-details-heading">
     <h2 class="visually-hidden" id="contact-details-heading">Donexia contact details</h2>
-
-    <!-- 1 Column Margin Left + 1 Column Margin Right -->
-    <div class="col-lg-10 offset-lg-1">
-
-        <div class="row g-4">
-
-            <!-- Our Office -->
-            <div class="col-lg-3 col-md-6">
-                <div class="info-card h-100">
-
-                    <div class="info-icon">
-                        <i class="bi bi-geo-alt"></i>
-                    </div>
-
-                    <h6>Our Office</h6>
-
-                    <p>
-                        Datfuslab Technologies Private Limited<br>
-                        B12, Sector-16B,<br>
-                        Greater Noida,<br>
-                        Uttar Pradesh - 201318
-                    </p>
-
-                </div>
+    <div class="row g-3 g-lg-4">
+        <div class="col-lg-3 col-sm-6">
+            <div class="info-card h-100">
+                <div class="contact-card-heading"><div class="info-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div><h3>Our Office</h3></div>
+                <p class="contact-company">Datfuslab Technologies<br>Private Limited</p>
+                <p>B12, Sector-16B, Greater Noida<br>Uttar Pradesh – 201318</p>
             </div>
-
-
-            <!-- Call Us -->
-            <div class="col-lg-3 col-md-6">
-                <div class="info-card h-100">
-
-                    <div class="info-icon">
-                        <i class="bi bi-telephone"></i>
-                    </div>
-
-                    <h6>Call Us</h6>
-
-                    <p>
-                        <a href="tel:+917004063385">+91 7004063385</a><br>
-                        Mon-Sat : 10 AM - 6 PM
-                        <br><br>
-                        <!--  +91 755 123 4567 -->
-                    </p>
-
-                </div>
-            </div>
-
-
-            <!-- Email Us -->
-            <div class="col-lg-3 col-md-6">
-                <div class="info-card h-100">
-
-                    <div class="info-icon">
-                        <i class="bi bi-envelope"></i>
-                    </div>
-
-                    <h6>Email Us</h6>
-
-                    <p>
-                        <a href="mailto:info@datfuslab.in">info@datfuslab.in</a><br>
-                    </p>
-
-                </div>
-            </div>
-
-
-            <!-- Business Hours -->
-            <div class="col-lg-3 col-md-6">
-                <div class="info-card h-100">
-
-                    <div class="info-icon">
-                        <i class="bi bi-clock"></i>
-                    </div>
-
-                    <h6>Business Hours</h6>
-
-                    <p>
-                        Monday - Saturday<br>
-                        10:00 AM - 6:00 PM
-                        <br><br>
-                        Sunday Closed
-                    </p>
-
-                </div>
-            </div>
-
         </div>
-
+        <div class="col-lg-3 col-sm-6">
+            <div class="info-card h-100">
+                <div class="contact-card-heading"><div class="info-icon"><i class="bi bi-telephone" aria-hidden="true"></i></div><h3>Call Us</h3></div>
+                <a class="contact-card-link" href="tel:+917004063385">+91 7004063385 <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <p>Speak with our team about<br>demos, pricing or support.</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="info-card h-100">
+                <div class="contact-card-heading"><div class="info-icon"><i class="bi bi-envelope" aria-hidden="true"></i></div><h3>Email Us</h3></div>
+                <a class="contact-card-link" href="mailto:info@datfuslab.com">info@datfuslab.com <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <p>Share your questions or<br>tell us about your NGO.</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="info-card h-100">
+                <div class="contact-card-heading"><div class="info-icon"><i class="bi bi-clock" aria-hidden="true"></i></div><h3>Business Hours</h3></div>
+                <p class="contact-company">Monday–Saturday</p>
+                <p>10:00 AM–6:00 PM IST</p>
+                <span class="contact-hours-note">Closed on Sunday</span>
+            </div>
+        </div>
     </div>
-
 </section>
 
 
@@ -592,7 +530,7 @@
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq-2" aria-expanded="false" aria-controls="contactFaq-2">Is there a free plan I can try first?</button>
         </h3>
         <div id="contactFaq-2" class="accordion-collapse collapse" data-bs-parent="#contactFaqAccordion">
-          <div class="accordion-body">Yes. You can start on the Free plan — up to 2 users and 1,000 records with email receipts — without a credit card, and book a demo whenever you are ready.</div>
+          <div class="accordion-body">Yes. You can start on the Free plan — up to 2 users with email receipts — without a credit card, and book a demo whenever you are ready.</div>
         </div>
       </div>
       <div class="accordion-item">
@@ -625,15 +563,7 @@
           <!-- about -->
           <div class="col-lg-3 col-md-6">
             <div class="footer-brand-block">
-              <div class="footer-brand">
-                <div class="footer-brand-icon">
-                  <i class="bi bi-heart-pulse"></i>
-                </div>
-                <div class="footer-brand-text">
-                  <h3>Donexia</h3>
-                  <p>NGO CRM for Greater Impact</p>
-                </div>
-              </div>
+              <div class="footer-brand"><a class="footer-logo-link" href="index.html" aria-label="Donexia home"><img src="assets/images/brand/donexia-logo.png" class="footer-logo-img" alt="Donexia — NGO CRM for Greater Impact" width="519" height="140" loading="lazy"></a></div>
 
               <p class="footer-about">
                 Donexia is an all-in-one NGO CRM that helps you manage donations,
@@ -679,7 +609,7 @@
             <div class="footer-links-block">
               <h4>Get Started</h4>
               <ul>
-                <li><a href="signup.html">Start Free — No Card</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="pricing.html#free-plan">Free Plan Details</a></li>
                 <li><a href="contact.html">Book a Demo</a></li>
                 <li><a href="pricing.html">View Pricing</a></li>
@@ -694,7 +624,7 @@
               <h4>Contact Us</h4>
               <ul class="footer-contact-list">
                 <li><i class="bi bi-telephone"></i> <a href="tel:+917004063385">+91 7004063385</a></li>
-                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.in">info@datfuslab.in</a></li>
+                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.com">info@datfuslab.com</a></li>
                 <li><i class="bi bi-globe"></i> <a href="https://donexia.in/">donexia.in</a></li>
                 <li><i class="bi bi-geo-alt"></i> B12, Sector-16B Noida, Uttar Pradesh, India</li>
               </ul>
@@ -705,7 +635,7 @@
 
         <!-- bottom bar -->
         <div class="footer-bottom">
-          <p>© 2026 Datfuslab Technologies Pvt. Ltd. All Rights Reserved.</p>
+          <p>© 2026 Datfuslab Technologies Pvt. Ltd. All Rights Reserved.</p><p class="footer-device-note"><i class="bi bi-phone"></i><i class="bi bi-tablet"></i><i class="bi bi-laptop"></i><span>Works on mobile, tablet &amp; laptop</span></p>
 
           <div class="footer-bottom-links">
             <a href="privacy-policy.html">Privacy Policy</a>

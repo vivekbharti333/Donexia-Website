@@ -1,0 +1,1596 @@
+
+/* ==============================
+   PRICING SECTION
+================================ */
+
+.pricing-section {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    background: linear-gradient(
+        110deg,
+        #ffffff 0%,
+        #ffffff 60%,
+        #fff8f3 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 20px 25px;
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   CONTAINER
+================================ */
+
+.pricing-container {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+
+/* ==============================
+   SMALL LABEL
+================================ */
+
+.pricing-label {
+    color: #ff5a1f;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   MAIN HEADING
+================================ */
+
+.pricing-title {
+    margin: 0;
+    color: #151d2d;
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.pricing-title span {
+    color: #ff5a1f;
+}
+
+
+/* ==============================
+   DESCRIPTION
+================================ */
+
+.pricing-description {
+    margin: 8px 0 15px;
+    color: #354052;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* ==============================
+   FEATURES
+================================ */
+
+.pricing-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-item {
+    min-width: 145px;
+    height: 30px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    background: #fff8f3;
+    border-radius: 30px;
+
+    color: #252525;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.feature-icon {
+    color: #ff5a1f;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   LEFT DECORATION
+================================ */
+
+.circle-decoration {
+    position: absolute;
+    left: -80px;
+    top: -60px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+.circle-decoration span {
+    position: absolute;
+    border: 1px solid #ffe7d7;
+    border-radius: 50%;
+}
+
+.circle-decoration span:nth-child(1) {
+    inset: 0;
+}
+
+.circle-decoration span:nth-child(2) {
+    inset: 12px;
+}
+
+.circle-decoration span:nth-child(3) {
+    inset: 24px;
+}
+
+.circle-decoration span:nth-child(4) {
+    inset: 36px;
+}
+
+
+/* ==============================
+   RIGHT DOT PATTERN
+================================ */
+
+.dot-decoration {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+
+    width: 130px;
+    height: 90px;
+
+    opacity: 0.5;
+
+    background-image:
+        radial-gradient(#ffc9aa 3px, transparent 3px);
+
+    background-size: 25px 25px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .pricing-section {
+        min-height: 280px;
+        padding: 30px 15px;
+    }
+
+    .pricing-title {
+        font-size: 32px;
+    }
+
+    .pricing-description {
+        font-size: 13px;
+    }
+
+    .pricing-features {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .feature-item {
+        min-width: 130px;
+    }
+
+    .dot-decoration {
+        opacity: 0.25;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .pricing-title {
+        font-size: 27px;
+    }
+
+    .pricing-description {
+        line-height: 1.5;
+    }
+
+    .pricing-features {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        width: 180px;
+    }
+}
+
+/* =========================================
+   PRICING PLANS SECTION
+========================================= */
+
+.plans-section {
+    position: relative;
+    width: 100%;
+    padding: 15px 30px 30px;
+    box-sizing: border-box;
+    background:
+        radial-gradient(circle at left top, #fff4e9 0, transparent 25%),
+        radial-gradient(circle at right bottom, #fff0e2 0, transparent 25%),
+        #ffffff;
+}
+
+.plans-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+
+/* =========================================
+   PLAN CARD
+========================================= */
+
+.plan-card {
+    position: relative;
+
+    min-height: 410px;
+    padding: 45px 28px 25px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.plan-icon {
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+
+/* Starter */
+
+.starter-icon {
+    background: #effbf1;
+    color: #12a83a;
+}
+
+
+/* Growth */
+
+.growth-icon {
+    background: #eff6ff;
+    color: #1264f5;
+}
+
+
+/* Professional */
+
+.professional-icon {
+    background: #fff4eb;
+    color: #ff5a0a;
+}
+
+
+/* Enterprise */
+
+.enterprise-icon {
+    background: #f6efff;
+    color: #7426c9;
+}
+
+
+/* Free */
+
+.free-icon {
+    background: #e6f7f9;
+    color: #0e8fa8;
+}
+
+
+/* =========================================
+   PLAN NAME
+========================================= */
+
+.plan-name {
+    text-align: center;
+
+    margin: 5px 0 3px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* Plan Colors */
+
+.starter-text {
+    color: #119b32;
+}
+
+.growth-text {
+    color: #0959ed;
+}
+
+.professional-text {
+    color: #ff4e00;
+}
+
+.enterprise-text {
+    color: #7226bd;
+}
+
+
+.free-text {
+    color: #0b7e94;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.plan-subtitle {
+    text-align: center;
+
+    margin: 0 0 14px;
+
+    font-size: 12px;
+    color: #343a46;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.plan-price {
+    text-align: center;
+
+    font-size: 32px;
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+}
+
+.plan-price span {
+    font-size: 15px;
+
+    color: #293140;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   USER LIMIT
+========================================= */
+
+.plan-limit {
+    text-align: center;
+
+    color: #303744;
+
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+.plan-limit span {
+    margin: 0 7px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.plan-btn {
+    width: 100%;
+    height: 36px;
+
+    background: transparent;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Starter Button */
+
+.starter-btn {
+    color: #159b39;
+    border: 1px solid #24b84f;
+}
+
+.starter-btn:hover {
+    background: #159b39;
+    color: #ffffff;
+}
+
+
+/* Growth Button */
+
+.growth-btn {
+    color: #075af5;
+    border: 1px solid #075af5;
+}
+
+.growth-btn:hover {
+    background: #075af5;
+    color: #ffffff;
+}
+
+
+/* Professional Button */
+
+.professional-btn {
+    color: #ffffff;
+
+    border: 1px solid #ff560a;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff5b08,
+            #ff4500
+        );
+}
+
+.professional-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Enterprise Button */
+
+.enterprise-btn {
+    color: #7524bd;
+    border: 1px solid #7524bd;
+}
+
+.enterprise-btn:hover {
+    background: #7524bd;
+    color: #ffffff;
+}
+
+
+/* Free Button */
+
+.free-btn {
+    color: #0e8fa8;
+    border: 1px solid #12a3bd;
+}
+
+.free-btn:hover {
+    background: #0e8fa8;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FEATURE LIST
+========================================= */
+
+.features-list {
+    margin-top: 15px;
+}
+
+.features-list h4 {
+    margin: 0 0 10px;
+
+    font-size: 11px;
+
+    color: #262c36;
+
+    font-weight: 700;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #333a45;
+
+    font-size: 15px;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   CHECK ICON
+========================================= */
+
+.check {
+    width: 13px;
+    height: 13px;
+
+    min-width: 13px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+/* Check Colors */
+
+.starter-check {
+    background: #0ca632;
+}
+
+.growth-check {
+    background: #0c5bea;
+}
+
+.professional-check {
+    background: #ff5000;
+}
+
+.enterprise-check {
+    background: #7424c1;
+}
+
+
+.free-check {
+    background: #0e8fa8;
+}
+
+
+/* =========================================
+   MOST POPULAR BADGE
+========================================= */
+
+.professional-card {
+    border: 2px solid #ff5a16;
+
+    box-shadow:
+        0 8px 25px rgba(255, 90, 22, 0.12);
+}
+
+.popular-badge {
+    position: absolute;
+
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    min-width: 130px;
+
+    padding: 6px 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff6a00,
+            #ff4b00
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .plans-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .plans-section {
+        padding: 30px 15px;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .plan-card {
+        min-height: auto;
+        padding: 45px 25px 25px;
+    }
+
+}
+
+/* ==========================================
+   MAIN SECTION
+========================================== */
+
+.plan-comparison-section {
+    width: 100%;
+    padding: 15px 30px 30px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(circle at left center, #fff5ed 0%, transparent 20%),
+        radial-gradient(circle at right center, #fff5ed 0%, transparent 20%),
+        #ffffff;
+}
+
+
+/* ==========================================
+   COMPARISON CARD
+========================================== */
+
+.comparison-card {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==========================================
+   COMPARISON TABLE
+========================================== */
+
+.comparison-table {
+    width: 100%;
+}
+
+.comparison-row {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        repeat(5, 1fr);
+
+    min-height: 26px;
+
+    align-items: center;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.comparison-header {
+    min-height: 38px;
+}
+
+.comparison-feature-title {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding-left: 5px;
+
+    color: #ff5a16;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.all-plan-icon {
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff1e8;
+
+    border-radius: 50%;
+
+    color: #ff5a16;
+}
+
+
+/* ==========================================
+   PLAN COLUMN HEADER
+========================================== */
+
+.plan-column {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border-left: 1px solid #eeeeee;
+
+    font-size: 15spx;
+    font-weight: 700;
+}
+
+.plan-small-icon {
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.starter-column {
+    color: #17a444;
+}
+
+.starter-column .plan-small-icon {
+    background: #effbf2;
+}
+
+
+.free-column {
+    color: #0b7e94;
+}
+
+.free-column .plan-small-icon {
+    background: #e6f7f9;
+}
+
+
+.growth-column {
+    color: #1561e8;
+}
+
+.growth-column .plan-small-icon {
+    background: #edf4ff;
+}
+
+
+.professional-column {
+    color: #ff510b;
+}
+
+.professional-column .plan-small-icon {
+    background: #fff1e8;
+}
+
+
+.enterprise-column {
+    color: #7629c6;
+}
+
+.enterprise-column .plan-small-icon {
+    background: #f5efff;
+}
+
+
+/* ==========================================
+   FEATURE NAME
+========================================== */
+
+.comparison-feature {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding-left: 5px;
+
+    font-size: 15px;
+
+    color: #343944;
+}
+
+.feature-orange-icon {
+    width: 15px;
+    height: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+
+    background: #ff6a1a;
+
+    color: #ffffff;
+
+    font-size: 8px;
+}
+
+
+/* ==========================================
+   VALUES
+========================================== */
+
+.comparison-value {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid #eeeeee;
+
+    color: #343944;
+
+    font-size: 13px;
+}
+
+
+/* Check Colors */
+
+.green-check {
+    color: #0ba63d;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.blue-check {
+    color: #075ff1;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.orange-check {
+    color: #ff5100;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.purple-check {
+    color: #7922cf;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   BOTTOM SECTION
+========================================== */
+
+.pricing-bottom-section {
+    max-width: 1250px;
+
+    margin: 10px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 2.2fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* ==========================================
+   TRUSTED NGO CARD
+========================================== */
+
+.trusted-ngo-card {
+    min-height: 105px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 20px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==========================================
+   TRUSTED INFORMATION
+========================================== */
+
+.trusted-info {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 320px;
+}
+
+.trusted-icon {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    border-radius: 50%;
+
+    background: #fff0e6;
+
+    color: #ff5b11;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.trusted-info h3 {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+
+    color: #242b37;
+
+    font-weight: 700;
+}
+
+.trusted-info p {
+    margin: 0;
+
+    color: #555b65;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   NGO LOGOS
+========================================== */
+
+.ngo-logos {
+    flex: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    align-items: center;
+}
+
+.ngo-logo-item {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 12px;
+
+    border-left: 1px solid #e8e8e8;
+}
+
+
+/* Your actual NGO images */
+
+.ngo-logo-item img {
+    width: 100%;
+    max-width: 90px;
+    height: 45px;
+
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   TEMPORARY LOGO PLACEHOLDER
+   Remove after adding actual images
+========================================== */
+
+.logo-placeholder {
+    width: 90px;
+    height: 60px;
+
+    /*border: 1px dashed #cccccc; */
+
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #aaaaaa;
+
+    font-size: 12px;
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   HELP CARD
+========================================== */
+
+.help-card {
+    position: relative;
+
+    min-height: 105px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #fff8f3,
+            #ffe4d0
+        );
+
+    border-radius: 10px;
+
+    padding: 13px 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HELP CONTENT
+========================================== */
+
+.help-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+}
+
+.help-content h3 {
+    margin: 0 0 5px;
+
+    font-size: 14px;
+
+    color: #252c37;
+
+    font-weight: 700;
+}
+
+.help-content p {
+    margin: 0 0 8px;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    color: #555c67;
+}
+
+
+/* ==========================================
+   DEMO BUTTON
+========================================== */
+
+.demo-button {
+    height: 35px;
+
+    padding: 0 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    background: #ffffff;
+
+    color: #ff520c;
+
+    border: 1px solid #ff6423;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.demo-button .arrow {
+    font-size: 16px;
+}
+
+.demo-button:hover {
+    background: #ff590f;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   SUPPORT IMAGE AREA
+========================================== */
+
+.support-image {
+    position: absolute;
+
+    right: 8px;
+    bottom: 0;
+
+    width: 110px;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+/* Actual image */
+
+.support-image img {
+    width: 100%;
+    max-height: 100px;
+
+    object-fit: contain;
+
+    object-position: bottom;
+}
+
+
+/* ==========================================
+   TEMP SUPPORT IMAGE PLACEHOLDER
+   Remove after adding actual image
+========================================== */
+
+.support-placeholder {
+    width: 70px;
+    height: 80px;
+
+    border: 1px dashed #ff9a6a;
+
+    border-radius: 8px 8px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: #ff7a3d;
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .comparison-card {
+        overflow-x: auto;
+    }
+
+    .comparison-table {
+        min-width: 1000px;
+    }
+
+    .pricing-bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .plan-comparison-section {
+        padding: 15px;
+    }
+
+    .trusted-ngo-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .trusted-info {
+        min-width: auto;
+    }
+
+    .ngo-logos {
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .ngo-logo-item {
+        border: 1px solid #eeeeee;
+
+        border-radius: 6px;
+    }
+
+    .help-card {
+        min-height: 130px;
+    }
+
+}
+
+
+/* ==========================================
+   PLAN CARDS — SELECTABLE TABLE DESIGN
+   (icon + name + radio header, spec rows)
+========================================== */
+
+.plan-card {
+    padding: 24px 20px 22px;
+    cursor: pointer;
+}
+
+.plan-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-ico {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.plan-head-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.plan-card .plan-name {
+    text-align: left;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.plan-card .plan-subtitle {
+    text-align: left;
+    margin: 2px 0 0;
+    font-size: 11px;
+    color: #6b7280;
+}
+
+.plan-radio {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border: 1.5px solid #cfd4dc;
+    border-radius: 50%;
+    position: relative;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.plan-card.is-selected .plan-radio {
+    border-color: #ff5a16;
+}
+
+.plan-card.is-selected .plan-radio::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 50%;
+    background: #ff5a16;
+}
+
+.plan-card .plan-price {
+    text-align: left;
+    font-size: 26px;
+    margin: 14px 0 0;
+}
+
+.plan-card .plan-price span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #293140;
+}
+
+.plan-includes {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid #eef0f4;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #9aa1ad;
+}
+
+.plan-spec {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.plan-spec li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 4.5px 0;
+    font-size: 12.5px;
+    line-height: 1.3;
+}
+
+.plan-spec li span {
+    color: #4b5261;
+}
+
+.plan-spec li b {
+    color: #1d2431;
+    font-weight: 700;
+    text-align: right;
+}
+
+.plan-spec li i {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.plan-spec li i.yes {
+    color: #12a83a;
+}
+
+.plan-spec li i.no {
+    color: #d64550;
+}
+
+.plan-card .plan-btn {
+    margin-top: 16px;
+    height: 38px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.plan-note {
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 11px;
+    color: #8a919d;
+}
+
+.plan-card.is-selected {
+    border: 2px solid #ff5a16;
+    box-shadow: 0 8px 25px rgba(255, 90, 22, 0.12);
+}
+
+@media (max-width: 1100px) {
+
+    .plan-card {
+        padding: 24px 26px 22px;
+    }
+}
+
+
+/* ==========================================
+   BILLING TOGGLE (Monthly / Yearly)
+========================================== */
+
+.billing-toggle-wrap {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.billing-toggle {
+    display: inline-flex;
+    gap: 4px;
+    padding: 5px;
+    background: #eef0f4;
+    border-radius: 999px;
+}
+
+.billing-option {
+    border: 0;
+    background: transparent;
+    padding: 8px 26px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b7280;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.billing-option.is-active {
+    background: #ffffff;
+    color: #ff5a16;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.billing-note {
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+@media (max-width: 480px) {
+
+    .billing-option {
+        padding: 7px 18px;
+        font-size: 12px;
+    }
+}
+
+
+/* ==========================================
+   4-PLAN GRID (Starter plan removed)
+========================================== */
+
+.plans-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    max-width: 1250px;
+}
+
+.comparison-row {
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+}
+
+/* Pricing cards matched to the monthly and annual plan reference. */
+.plans-section { background: #fcfcfd; padding-top: 24px; }
+.plan-card { padding: 16px; border: 1px solid #dfe4ec; border-radius: 14px; }
+.professional-card { box-shadow: 0 5px 20px rgba(0,0,0,.04); }
+.plan-card.is-selected { background: linear-gradient(150deg, #fff6ee, #fff 65%); }
+.plan-head { margin: 0 -5px; padding: 12px 8px; gap: 10px; border-radius: 10px; background: linear-gradient(110deg,#f3f6f8,#fff); }
+.growth-card .plan-head { background: linear-gradient(110deg,#fff1e6,#fffaf6); }
+.professional-card .plan-head { background: linear-gradient(110deg,#f5efff,#fff); }
+.enterprise-card .plan-head { background: linear-gradient(110deg,#eef5ff,#fff); }
+.plan-ico { width: 34px; height: 34px; min-width: 34px; border-radius: 10px; background: #fff; font-size: 19px; box-shadow: 0 5px 10px rgba(25,35,50,.05); }
+.free-icon { color: #5c7285; }
+.growth-icon { color: #ed5000; }
+.professional-icon { color: #8145d5; }
+.enterprise-icon { color: #df4900; background: #fff1e6; }
+.plan-card .plan-name { color: #171717; font-size: 20px; letter-spacing: -.5px; }
+.plan-card .plan-subtitle { margin-top: 4px; font-size: 12px; color: #6c7b92; }
+.plan-radio { width: 16px; height: 16px; min-width: 16px; border-color: #888; }
+.plan-card .plan-price { color: #141b2b; margin: 14px 0 16px; font-size: 27px; font-weight: 700; letter-spacing: -1px; }
+.plan-card .plan-price .price-amount { color: inherit; font-size: inherit; font-weight: inherit; }
+.plan-card .plan-price span:not(.price-amount) { color: #5f6d85; font-size: 13px; font-weight: 600; letter-spacing: 0; }
+.plan-includes { margin-top: 0; padding-top: 13px; border-color: #e4e8ef; color: #5b687e; font-size: 12px; letter-spacing: 0; }
+.plan-spec { margin-top: 8px; }
+.plan-spec li { min-height: 32px; padding: 5px 0; border-bottom: 1px solid #edf0f5; font-size: 13px; }
+.plan-spec li:last-child { border-bottom: 0; }
+.plan-spec li span { color: #50658b; }
+.plan-spec li i { display: inline-flex; justify-content: center; align-items: center; width: 20px; height: 20px; border-radius: 50%; font-size: 16px; }
+.plan-spec li i.yes { color: #14945b; background: #e8f7ef; }
+.plan-spec li i.no { color: #df3e50; background: #fff0f2; }
+.plan-card .plan-btn { height: 40px; border-radius: 8px; font-size: 14px; border: 1px solid #f45100; color: #e54b00; background: #fff; }
+.growth-card .plan-btn, .plan-card .plan-btn:hover { color: #fff; background: linear-gradient(100deg,#ff6900,#df4900); }
+.popular-badge { left: auto; right: 14px; transform: none; top: -13px; border-radius: 30px; font-size: 10px; }
+.billing-toggle { padding: 6px; border: 1px solid #dfe4ec; background: #f0f2f6; }
+.billing-option { padding: 10px 24px; font-size: 14px; }
+.billing-note { font-size: 13px; }
+@media (max-width: 1100px) { .plans-container { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px 18px; } }
+@media (max-width: 600px) { .plans-container { grid-template-columns: minmax(0,1fr); } .plans-section { padding: 30px 16px; } }
+
+@media (max-width: 1000px) {
+
+    .comparison-table {
+        min-width: 850px;
+    }
+}

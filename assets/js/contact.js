@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
     const messageDiv = document.getElementById("contactMessage");
 
+    document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+        link.addEventListener("click", () => {
+            if (typeof window.gtag === "function") {
+                window.gtag("event", "call_click", {
+                    location: "contact_page"
+                });
+            }
+        });
+    });
     function showMessage(type, heading, message) {
         const alert = document.createElement("div");
         alert.className = `alert alert-${type} alert-dismissible fade show`;
@@ -42,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 mobileNumber: document.getElementById("phone").value.trim(),
                 companyName: document.getElementById("organization").value.trim(),
                 leadFor: document.getElementById("subject").value,
-                notes: document.getElementById("message").value.trim()
+                notes: document.getElementById("message").value.trim() || document.getElementById("subject").value
             }
         };
 
@@ -63,15 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error("The server returned an invalid response.");
             }
 
-            if (!response.ok) {
-                throw new Error(result.responseMessage || "Unable to process your request.");
+            if (!response.ok || !result || result.responseCode !== 200 || !result.payload) {
+                throw new Error(result?.responseMessage || "Unable to process your request.");
             }
 
-            if (result.responseCode === 200 && result.payload) {
+            const payload = result.payload;
+            const sent = payload.sendStatus === true ||
+                (payload.sendStatus == null && payload.respCode === 200);
 
-                if (result.payload.respCode === 200) {
+                if (sent) {
 
-                    showMessage("success", "Success!", result.payload.respMesg);
+                    showMessage("success", "Success!", payload.respMesg || "Your message has been sent successfully. Our team will get back to you soon.");
                     if (typeof window.gtag === "function") {
                         window.gtag("event", "generate_lead", {
                             method: "contact_form"
@@ -82,13 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 } else {
 
-                    showMessage("danger", "Error!", result.payload.respMesg);
+                    showMessage("danger", "Error!", payload.respMesg || "Your message could not be sent. Please try again later or contact us by phone.");
                 }
-
-            } else {
-
-                showMessage("danger", "Error!", "Unable to process your request.");
-            }
 
         } catch (error) {
 

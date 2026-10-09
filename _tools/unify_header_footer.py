@@ -112,8 +112,8 @@ HEADER_TMPL = '''<!-- ================= HEADER ================= -->
 
                         <div class="nav-btn-wrap">
 
-                            <a href="{P}signup.html" class="request-demo-btn">
-                                Start Free
+                            <a href="{P}contact.html" class="request-demo-btn">
+                                Contact Us
                                 <i class="bi bi-arrow-right ms-2"></i>
                             </a>
 
@@ -139,15 +139,7 @@ FOOTER_TMPL = '''<!-- ===== FOOTER ===== -->
           <!-- about -->
           <div class="col-lg-3 col-md-6">
             <div class="footer-brand-block">
-              <div class="footer-brand">
-                <div class="footer-brand-icon">
-                  <i class="bi bi-heart-pulse"></i>
-                </div>
-                <div class="footer-brand-text">
-                  <h3>Donexia</h3>
-                  <p>NGO CRM for Greater Impact</p>
-                </div>
-              </div>
+              <div class="footer-brand"><a class="footer-logo-link" href="{P}index.html" aria-label="Donexia home"><img src="{P}assets/images/brand/donexia-logo.png" class="footer-logo-img" alt="Donexia — NGO CRM for Greater Impact" width="519" height="140" loading="lazy"></a></div>
 
               <p class="footer-about">
                 Donexia is an all-in-one NGO CRM that helps you manage donations,
@@ -193,7 +185,7 @@ FOOTER_TMPL = '''<!-- ===== FOOTER ===== -->
             <div class="footer-links-block">
               <h4>Get Started</h4>
               <ul>
-                <li><a href="{P}signup.html">Start Free — No Card</a></li>
+                <li><a href="{P}contact.html">Contact Us</a></li>
                 <li><a href="{P}pricing.html#free-plan">Free Plan Details</a></li>
                 <li><a href="{P}contact.html">Book a Demo</a></li>
                 <li><a href="{P}pricing.html">View Pricing</a></li>
@@ -208,7 +200,7 @@ FOOTER_TMPL = '''<!-- ===== FOOTER ===== -->
               <h4>Contact Us</h4>
               <ul class="footer-contact-list">
                 <li><i class="bi bi-telephone"></i> <a href="tel:+917004063385">+91 7004063385</a></li>
-                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.in">info@datfuslab.in</a></li>
+                <li><i class="bi bi-envelope"></i> <a href="mailto:info@datfuslab.com">info@datfuslab.com</a></li>
                 <li><i class="bi bi-globe"></i> <a href="https://donexia.in/">donexia.in</a></li>
                 <li><i class="bi bi-geo-alt"></i> B12, Sector-16B Noida, Uttar Pradesh, India</li>
               </ul>

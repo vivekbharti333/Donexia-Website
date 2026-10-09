@@ -79,28 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "80g-donation-receipt-software.html": {
       text: "Send 80G receipts automatically on WhatsApp, SMS & email.",
-      link: "Start free",
-      href: prefix + "signup.html"
+      link: "Contact us",
+      href: prefix + "contact.html"
     },
     "form-10bd-software.html": {
       text: "Keep Form 10BD records organized all year — not rebuilt in May.",
-      link: "Start free",
-      href: prefix + "signup.html"
+      link: "Contact us",
+      href: prefix + "contact.html"
     },
     "ngo-donor-management-software.html": {
       text: "Every donor, every gift, one searchable register.",
-      link: "Start free",
-      href: prefix + "signup.html"
+      link: "Contact us",
+      href: prefix + "contact.html"
     },
     "whatsapp-donation-receipts.html": {
       text: "WhatsApp donation receipts the moment money arrives.",
-      link: "Start free",
-      href: prefix + "signup.html"
+      link: "Contact us",
+      href: prefix + "contact.html"
     },
     "campaign.html": {
       text: "Track campaign goals, donations and receipts in real time.",
-      link: "Start free",
-      href: prefix + "signup.html"
+      link: "Contact us",
+      href: prefix + "contact.html"
     },
     "pricing.html": {
       text: "Start free — upgrade only when your NGO outgrows it.",
@@ -119,14 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (page === "index.html" && location.pathname.indexOf("/guides/") !== -1) {
     msg = {
       text: "Put these guides to work — start free, no credit card.",
-      link: "Start free",
-      href: "../signup.html"
+      link: "Contact us",
+      href: "../contact.html"
     };
   } else if (location.pathname.indexOf("/guides/") !== -1) {
     msg = {
       text: "Put these guides to work — start free, no credit card.",
-      link: "Start free",
-      href: "../signup.html"
+      link: "Contact us",
+      href: "../contact.html"
     };
   }
 
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   var notes = {
     monthly: "Billed monthly. Free and Enterprise plans stay the same.",
-    yearly: "Billed annually — 2 months free. Free and Enterprise plans stay the same."
+    yearly: "Billed annually — Pro: save ₹1,988/year. Premium: save ₹3,600/year. Free and Enterprise plans stay the same."
   };
 
   function setBilling(mode) {
