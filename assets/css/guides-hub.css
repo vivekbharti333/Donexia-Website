@@ -1,0 +1,64 @@
+/* Resource library. Typography inherits from the shared index stylesheet. */
+.guides-hub { color:#14213d; background:#fff; }
+.hub-hero { position:relative; overflow:hidden; padding:28px 0 64px; background:radial-gradient(ellipse at 95% 20%,#ffdab366,transparent 50%),linear-gradient(120deg,#fff6ed,#fffaf6 50%,#fff); }
+.hub-hero nav { display:flex; align-items:center; gap:10px; font-size:12px; color:#788297; margin-bottom:36px; }
+.hub-hero nav a { text-decoration:none; color:#57657d; }
+.hub-hero nav i { font-size:9px; }
+.hub-hero-grid { display:grid; grid-template-columns:1.25fr 1fr; align-items:center; gap:90px; }
+.hub-eyebrow { display:inline-block; padding:6px 12px; border-radius:25px; background:#ffe6ce; color:#c84b06; font-size:10px; font-weight:600; letter-spacing:.05em; margin-bottom:18px; }
+.hub-hero h1 { font-size:clamp(38px,4.5vw,58px); font-weight:600; line-height:1.08; letter-spacing:-1.2px; margin:0 0 18px; color:#111827; }
+.hub-hero h1 span { color:#ff6500; }
+.hub-hero-grid>div>p { max-width:540px; color:#5f6c7b; font-size:17px; line-height:1.65; margin-bottom:24px; }
+.hub-primary { display:inline-flex; align-items:center; gap:22px; padding:13px 22px; border-radius:8px; background:#ff6500; color:white; font-size:14px; font-weight:600; text-decoration:none; }
+.hub-primary:hover { color:white; background:#df4c00; }
+.hub-featured { position:relative; border:1px solid #ffdbbb; border-radius:20px; background:#ffffffdf; padding:30px; box-shadow:0 18px 50px #bf7b2e0c; }
+.hub-icon { display:inline-flex; align-items:center; justify-content:center; width:52px; height:52px; flex-shrink:0; background:#fff0e2; border-radius:14px; color:#fa650c; font-size:26px; }
+.hub-featured>.hub-icon { margin-bottom:22px; }
+.hub-label { display:block; color:#b95113; font-size:10px; line-height:1.4; font-weight:600; letter-spacing:.08em; }
+.hub-featured h2 { font-size:27px; font-weight:600; letter-spacing:-.6px; line-height:1.2; margin:10px 0 12px; }
+.hub-featured p { color:#637089; font-size:14px; line-height:1.65; margin-bottom:22px; }
+.hub-featured>a { display:flex; align-items:center; justify-content:space-between; padding-top:18px; border-top:1px solid #f5e8db; color:#b74306; text-decoration:none; font-weight:600; font-size:14px; }
+.hub-library { padding-top:52px; scroll-margin-top:120px; }
+.hub-section-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:26px; }
+.hub-section-heading h2 { color:#14213d; font-size:32px; font-weight:600; letter-spacing:-.6px; margin:8px 0 0; }
+.hub-section-heading>p { margin:0; font-size:14px; line-height:1.6; color:#738097; }
+.hub-guide-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.hub-guide { display:flex; flex-direction:column; min-width:0; border:1px solid #e9eaf0; border-radius:16px; padding:26px; background:linear-gradient(140deg,#fffdfb,#fff 70%); transition:border-color .2s,box-shadow .2s,transform .2s; }
+.hub-guide:hover { border-color:#ffc697; box-shadow:0 12px 30px #2636500a; transform:translateY(-3px); }
+.hub-guide-top { display:flex; align-items:center; gap:15px; margin-bottom:22px; }
+.hub-guide h3 { font-size:23px; line-height:1.25; font-weight:600; letter-spacing:-.4px; margin:0 0 12px; }
+.hub-guide h3 a { color:#14213d; text-decoration:none; }
+.hub-guide h3 a:hover { color:#df5300; }
+.hub-guide>p { color:#68758a; line-height:1.65; font-size:15px; margin:0 0 28px; }
+.hub-guide-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-top:auto; padding-top:18px; border-top:1px solid #f0f1f5; }
+.hub-guide-bottom>span { font-size:11px; color:#8190a3; }
+.hub-guide-bottom>a { display:inline-flex; gap:10px; align-items:center; color:#c54a00; font-weight:600; font-size:13px; text-decoration:none; white-space:nowrap; }
+.hub-practice { display:flex; align-items:center; gap:24px; margin-top:34px; padding:28px; border:1px solid #f6e5d6; background:#fff9f3; border-radius:16px; }
+.hub-practice h2 { font-size:23px; font-weight:600; letter-spacing:-.3px; margin-bottom:8px; }
+.hub-practice p { color:#66748a; font-size:14px; line-height:1.65; max-width:700px; margin:0; }
+.hub-practice>a { display:inline-flex; align-items:center; gap:12px; color:#b84505; font-size:13px; font-weight:600; text-decoration:none; white-space:nowrap; margin-left:auto; }
+.guides-hub a:focus-visible { outline:3px solid #1d4679; outline-offset:5px; border-radius:4px; }
+.guides-hub .cta-box h2 { margin:0; }
+.guides-hub .cta-box p { line-height:1.5; }
+@media(max-width:991px) { .hub-hero-grid { gap:36px; } .hub-featured { padding:24px; } .hub-practice { flex-wrap:wrap; } .hub-practice>div:nth-child(2) { flex:1; } .hub-practice>a { margin-left:76px; } }
+@media(max-width:767px) {
+  .hub-hero { padding-bottom:36px; }
+  .hub-hero nav { margin-bottom:28px; }
+  .hub-hero-grid { grid-template-columns:1fr; gap:30px; }
+  .hub-featured { padding:24px; }
+  .hub-featured h2 br { display:none; }
+  .hub-featured>.hub-icon { margin-bottom:16px; }
+  .hub-library { padding-top:36px; }
+  .hub-section-heading { display:block; }
+  .hub-section-heading h2 { font-size:28px; }
+  .hub-section-heading>p { margin-top:12px; }
+  .hub-section-heading>p br { display:none; }
+  .hub-guide-grid { grid-template-columns:1fr; gap:16px; }
+  .hub-guide { padding:23px; }
+  .hub-guide h3 { font-size:22px; }
+  .hub-practice { padding:24px; gap:18px; }
+  .hub-practice>div:nth-child(2) { flex-basis:100%; }
+  .hub-practice>a { margin-left:0; white-space:normal; }
+}
+@media(prefers-reduced-motion:reduce) { .hub-guide { transition:none; } .hub-guide:hover { transform:none; } }
+.guides-hub .custom-container { width:90%; max-width:1200px; margin-inline:auto; padding-inline:0; }

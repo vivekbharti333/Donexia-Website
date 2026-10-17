@@ -39,12 +39,11 @@
     .guide-table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.95rem; }
     .guide-table th, .guide-table td { border: 1px solid #e5e8ee; padding: 10px 12px; text-align: left; }
     .guide-table th { background: #fff4ed; color: #17233c; }
-    .guide-cta { background: linear-gradient(90deg, #ff6a00, #ff4b00); border-radius: 14px; color: #fff; padding: 28px; margin: 2.5rem 0 1rem; }
-    .guide-cta h3 { color: #fff; margin-bottom: 6px; }
-    .guide-cta p { color: #ffe9dc; margin-bottom: 14px; }
-    .guide-cta a.btn-light { font-weight: 700; }
-    .guide-faq .accordion-item { margin-bottom: 12px; border: 1px solid #e8eaf0; border-radius: 12px; overflow: hidden; }
-    .guide-faq .accordion-button { font-weight: 700; box-shadow: none; }
+    .guide-faq .accordion-item { margin-bottom: 8px; border: 1px solid #e8eaf0; border-radius: 12px; overflow: hidden; }
+    .guide-faq .accordion { max-width: 900px; margin: 0 auto; }
+    .guide-article .guide-faq .accordion-header { margin: 0; padding: 0; }
+    .guide-faq .accordion-button { font-family: inherit; font-size: 1rem; font-weight: 700; line-height: 1.2; padding: 1rem 1.25rem; box-shadow: none; }
+    .guide-faq .accordion-body { padding: 1rem 1.25rem; font-size: 1rem; line-height: 1.5; }
     .guide-faq .accordion-button:not(.collapsed) { color: #d8530d; background: #fff4ed; }
     .breadcrumb-wrap { --bs-breadcrumb-divider: '/'; }
   </style>
@@ -360,13 +359,24 @@
       </div>
     </div>
   </section>
-    <div class="guide-cta text-center">
-      <h3>Put this into practice with Donexia</h3>
-      <p>Manage donations, donors, receipts and reports from one platform — start free, no credit card.</p>
-      <a href="../contact.html" class="btn btn-light">Contact Us <i class="bi bi-arrow-right ms-2"></i></a>
-      <a href="../contact.html" class="btn btn-outline-light ms-2">Book a Demo</a>
-    </div>
+
   </article>
+<section class="footer-cta" aria-labelledby="guide-cta-heading">
+  <div class="container">
+    <div class="cta-box">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2 id="guide-cta-heading">Put this into practice with Donexia</h2>
+          <p>Manage donations, donors, receipts and reports from one platform — start free, no credit card.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end mt-3 mt-lg-0 d-flex flex-wrap gap-2 justify-content-lg-end">
+          <a href="../contact.html" class="cta-btn">Contact Us <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
+          <a href="../contact.html" class="cta-btn">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <!-- ===== FOOTER ===== -->
   <footer class="donexia-footer">
